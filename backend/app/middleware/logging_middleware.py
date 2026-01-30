@@ -4,7 +4,6 @@ from fastapi import Request
 from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.responses import Response
 import logging
-from app.core.logging import request_logger
 
 logger = logging.getLogger(__name__)
 
@@ -16,17 +15,6 @@ class LoggingMiddleware(BaseHTTPMiddleware):
         request_id = str(uuid.uuid4())
         request.state.request_id = request_id
         
-        # Get user ID from auth if available
-        user_id = None
-        try:
-            # Try to extract user ID from JWT token
-            auth_header = request.headers.get("Authorization")
-            if auth_header and auth_header.startswith("Bearer "):
-                # In a real implementation, decode JWT to get user_id
-                user_id = 1  # Placeholder
-        except:
-            pass
-        
         # Log request start
         logger.info(f"Request started: {request.method} {request.url.path} - ID: {request_id}")
         
@@ -37,14 +25,7 @@ class LoggingMiddleware(BaseHTTPMiddleware):
             duration = time.time() - start_time
             
             # Log request completion
-            request_logger.log_request(
-                request_id=request_id,
-                method=request.method,
-                path=request.url.path,
-                status_code=response.status_code,
-                duration=duration,
-                user_id=user_id
-            )
+            logger.info(f"Request completed: {request.method} {request.url.path} - {response.status_code} - {duration*1000:.2f}ms")
             
             # Add request ID to response headers
             response.headers["X-Request-ID"] = request_id
@@ -54,15 +35,7 @@ class LoggingMiddleware(BaseHTTPMiddleware):
             
         except Exception as e:
             duration = time.time() - start_time
-            request_logger.log_error(
-                request_id=request_id,
-                error=e,
-                context={
-                    "method": request.method,
-                    "path": request.url.path,
-                    "duration": duration
-                }
-            )
+            logger.error(f"Request error: {request.method} {request.url.path} - {str(e)} - {duration*1000:.2f}ms")
             raise
 
 class RateLimitingMiddleware(BaseHTTPMiddleware):

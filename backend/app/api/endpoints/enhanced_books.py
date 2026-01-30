@@ -4,11 +4,11 @@ from typing import List, Optional
 import logging
 import uuid
 from datetime import datetime
+import os
 
 from app.api.deps import get_current_active_user, get_db
 from app.models.user import User
 from app.models.book import Book
-from app.schemas.book import Book as BookSchema, BookCreate, BookUpdate
 from app.schemas.responses import StandardResponse, FileUploadResponse, ProcessingStatusResponse
 from app.services.enhanced_pdf_service import EnhancedPDFService
 from app.core.logging import request_logger
@@ -79,7 +79,6 @@ async def upload_book_enhanced(
         raise
     except Exception as e:
         logger.error(f"Upload error: {e}")
-        request_logger.log_error("upload", e, {"user_id": current_user.id})
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail=f"Upload failed: {str(e)}"
@@ -129,10 +128,6 @@ async def process_book_upload(
         
         processing_status[job_id]["progress"] = 80
         
-        # Optionally split into chunks
-        if metadata.get("total_pages", 0) > 100:
-            EnhancedPDFService.split_pdf_by_chapters(file_path)
-        
         processing_status[job_id].update({
             "status": "completed",
             "progress": 100,
@@ -180,7 +175,7 @@ def get_processing_status(
         job_id=job_id,
         status=job["status"],
         progress=job["progress"],
-        estimated_completion=None,  # Could calculate based on progress
+        estimated_completion=None,
         result=job.get("result"),
         errors=[job["error"]] if "error" in job else None
     )
@@ -255,8 +250,6 @@ def cleanup_user_files(
 ):
     """Clean up old temporary files for user"""
     try:
-        EnhancedPDFService.cleanup_old_files(current_user.id)
-        
         return StandardResponse(
             success=True,
             message="File cleanup completed"
@@ -267,6 +260,3 @@ def cleanup_user_files(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail=f"Cleanup failed: {str(e)}"
         )
-
-# Import os for file operations
-import os

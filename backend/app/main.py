@@ -3,6 +3,11 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from app.core.config import settings
 from app.core.database import init_db
+from app.core.logging import setup_logging
+from app.middleware.logging_middleware import LoggingMiddleware, RateLimitingMiddleware
+
+# Setup logging
+setup_logging()
 
 # Initialize database on startup
 init_db()
@@ -15,10 +20,14 @@ app = FastAPI(
     redoc_url="/redoc"
 )
 
+# Add middleware
+app.add_middleware(LoggingMiddleware)
+app.add_middleware(RateLimitingMiddleware, max_requests=100, window_seconds=60)
+
 # Configure CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Allow all origins for now
+    allow_origins=["*"],  # Allow all origins for development
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -26,6 +35,16 @@ app.add_middleware(
 
 # Mount static files for uploaded PDFs
 app.mount("/uploads", StaticFiles(directory=settings.UPLOAD_DIR), name="uploads")
+
+# Import and include routers
+from app.api.endpoints import auth, books, dictionary, reading
+from app.api.endpoints.enhanced_books import router as enhanced_books_router
+
+app.include_router(auth.router, prefix="/api/auth", tags=["auth"])
+app.include_router(books.router, prefix="/api/books", tags=["books"])
+app.include_router(dictionary.router, prefix="/api/dictionary", tags=["dictionary"])
+app.include_router(reading.router, prefix="/api/reading", tags=["reading"])
+app.include_router(enhanced_books_router, prefix="/api/books", tags=["books"])
 
 @app.get("/")
 def read_root():
@@ -38,7 +57,12 @@ def read_root():
 
 @app.get("/health")
 def health_check():
-    return {"status": "healthy", "database": "connected"}
+    return {
+        "status": "healthy",
+        "database": "connected",
+        "timestamp": "now",
+        "version": "1.0.0"
+    }
 
 @app.get("/api/test")
 def test_endpoint():
