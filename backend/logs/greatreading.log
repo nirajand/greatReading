@@ -137,3 +137,227 @@ AttributeError: module 'bcrypt' has no attribute '__about__'
 2026-01-30 17:18:44 - app.middleware.logging_middleware - INFO - Request started: GET /openapi.json - ID: 5ce16ed1-90ac-4b2c-a134-6f5a99c8b953
 2026-01-30 17:18:44 - app.middleware.logging_middleware - INFO - Request completed: GET /openapi.json - 200 - 0.58ms
 2026-01-30 17:18:44 - app.middleware.logging_middleware - INFO - Request completed: GET /openapi.json - 200 - 0.58ms
+2026-01-30 17:22:02 - app.middleware.logging_middleware - INFO - Request started: GET /api/books/processing-status/God is not Great - ID: bec9d44e-c306-4468-bc6b-eaa98431a28c
+2026-01-30 17:22:02 - app.middleware.logging_middleware - INFO - Request started: GET /api/books/processing-status/God is not Great - ID: bec9d44e-c306-4468-bc6b-eaa98431a28c
+2026-01-30 17:22:02 - app.middleware.logging_middleware - INFO - Request completed: GET /api/books/processing-status/God is not Great - 401 - 0.81ms
+2026-01-30 17:22:02 - app.middleware.logging_middleware - INFO - Request completed: GET /api/books/processing-status/God is not Great - 401 - 0.81ms
+2026-01-30 17:22:04 - app.middleware.logging_middleware - INFO - Request started: GET /api/books/processing-status/God is not Great - ID: ee95c8a1-458d-41f1-bebd-4848fa524b2d
+2026-01-30 17:22:04 - app.middleware.logging_middleware - INFO - Request started: GET /api/books/processing-status/God is not Great - ID: ee95c8a1-458d-41f1-bebd-4848fa524b2d
+2026-01-30 17:22:04 - app.middleware.logging_middleware - INFO - Request completed: GET /api/books/processing-status/God is not Great - 401 - 0.78ms
+2026-01-30 17:22:04 - app.middleware.logging_middleware - INFO - Request completed: GET /api/books/processing-status/God is not Great - 401 - 0.78ms
+2026-01-30 17:48:47 - app.core.logging - INFO - Logging system initialized
+2026-01-30 17:48:56 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 438eb888-47ba-4b82-8100-8db2fb6fb051
+2026-01-30 17:48:56 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 438eb888-47ba-4b82-8100-8db2fb6fb051
+2026-01-30 17:48:56 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/register - 2 validation errors:
+  {'type': 'missing', 'loc': ('response', 'created_at'), 'msg': 'Field required', 'input': <app.models.user.User object at 0x78ac42956c60>, 'url': 'https://errors.pydantic.dev/2.5/v/missing'}
+  {'type': 'missing', 'loc': ('response', 'updated_at'), 'msg': 'Field required', 'input': <app.models.user.User object at 0x78ac42956c60>, 'url': 'https://errors.pydantic.dev/2.5/v/missing'}
+ - 323.41ms
+2026-01-30 17:48:56 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/register - 2 validation errors:
+  {'type': 'missing', 'loc': ('response', 'created_at'), 'msg': 'Field required', 'input': <app.models.user.User object at 0x78ac42956c60>, 'url': 'https://errors.pydantic.dev/2.5/v/missing'}
+  {'type': 'missing', 'loc': ('response', 'updated_at'), 'msg': 'Field required', 'input': <app.models.user.User object at 0x78ac42956c60>, 'url': 'https://errors.pydantic.dev/2.5/v/missing'}
+ - 323.41ms
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 5b93dc99-0eac-439b-962e-5720ded938fb
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 5b93dc99-0eac-439b-962e-5720ded938fb
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.20ms
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.20ms
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 95b42613-d617-4a58-a9f7-d926f892de6b
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 95b42613-d617-4a58-a9f7-d926f892de6b
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 6.32ms
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 6.32ms
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 816604e2-8dbe-4c9f-8127-3e2fd1c05e8d
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 816604e2-8dbe-4c9f-8127-3e2fd1c05e8d
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 422 - 3.16ms
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 422 - 3.16ms
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 422 Unprocessable Entity"
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 422 Unprocessable Entity"
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: bb51a94b-2bd4-42b2-b9aa-53e525e66690
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: bb51a94b-2bd4-42b2-b9aa-53e525e66690
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 7.34ms
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 7.34ms
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 2f6d2dea-40d6-489a-8dcf-74c8311aed7a
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 2f6d2dea-40d6-489a-8dcf-74c8311aed7a
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 44.71ms
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 44.71ms
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: 4a354079-e738-41ad-be39-74a674b800e6
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: 4a354079-e738-41ad-be39-74a674b800e6
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/login - 401 - 5.30ms
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/login - 401 - 5.30ms
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: c9b19570-74cf-472a-8efc-91eea014d066
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: c9b19570-74cf-472a-8efc-91eea014d066
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.24ms
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.24ms
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: GET /api/auth/me - ID: 01633ed4-45c3-45f4-80f6-0b84440d0934
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: GET /api/auth/me - ID: 01633ed4-45c3-45f4-80f6-0b84440d0934
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: GET /api/auth/me - 401 - 2.36ms
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: GET /api/auth/me - 401 - 2.36ms
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/me "HTTP/1.1 401 Unauthorized"
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/me "HTTP/1.1 401 Unauthorized"
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: d638285f-5f69-4021-a0b1-95e1572df8da
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: d638285f-5f69-4021-a0b1-95e1572df8da
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.63ms
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.63ms
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 6c98ba3f-b690-4090-8d84-b418c4cc6b1a
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 6c98ba3f-b690-4090-8d84-b418c4cc6b1a
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 5.21ms
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 5.21ms
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 777ed955-d973-4e84-8e0f-0dc565435ed4
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 777ed955-d973-4e84-8e0f-0dc565435ed4
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 5.66ms
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 5.66ms
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 276a858f-f507-41c5-9a8c-b8f521a64fcb
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 276a858f-f507-41c5-9a8c-b8f521a64fcb
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.24ms
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.24ms
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: a7b05f0f-caee-4ca4-a4e2-50d963c326ee
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: a7b05f0f-caee-4ca4-a4e2-50d963c326ee
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.91ms
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.91ms
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 553357a0-0c5e-4c64-9769-f20e3c55823f
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 553357a0-0c5e-4c64-9769-f20e3c55823f
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.25ms
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.25ms
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 02e647ad-9c05-49b9-8033-1f3fa2b1f572
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 02e647ad-9c05-49b9-8033-1f3fa2b1f572
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 6.34ms
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 6.34ms
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: b4c2d2f0-f6cc-4142-8dad-fd8dad2c7041
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: b4c2d2f0-f6cc-4142-8dad-fd8dad2c7041
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.49ms
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.49ms
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 65f98a87-7ebd-454c-b93e-cf44c6cbbfd5
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 65f98a87-7ebd-454c-b93e-cf44c6cbbfd5
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.80ms
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.80ms
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 5e4e36c4-df66-4f20-90fa-f5e9876d1655
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 5e4e36c4-df66-4f20-90fa-f5e9876d1655
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.56ms
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.56ms
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: c9bd7fdf-871c-4b2e-934e-b38ea67a40b2
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: c9bd7fdf-871c-4b2e-934e-b38ea67a40b2
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.62ms
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.62ms
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 4944bbd3-185f-4b36-b3f7-8cc4693a5766
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 4944bbd3-185f-4b36-b3f7-8cc4693a5766
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.64ms
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.64ms
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 48bd1db8-0f83-4de0-b090-9501f90973a7
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 48bd1db8-0f83-4de0-b090-9501f90973a7
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.37ms
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.37ms
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 384a0ac3-8488-4dc7-b47b-8b6c61eec03b
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 384a0ac3-8488-4dc7-b47b-8b6c61eec03b
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.84ms
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.84ms
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 3be6ef90-30e5-4fdf-8fbb-28df42f241b0
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 3be6ef90-30e5-4fdf-8fbb-28df42f241b0
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.80ms
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.80ms
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 42d904b0-03d4-41da-b9f8-837ae74dc982
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 42d904b0-03d4-41da-b9f8-837ae74dc982
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.24ms
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.24ms
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: e7e1df67-7350-4b13-b2df-77f0f59a22ad
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: e7e1df67-7350-4b13-b2df-77f0f59a22ad
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.43ms
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.43ms
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: c6a80ec1-f95d-4656-8d17-474f882f88db
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: c6a80ec1-f95d-4656-8d17-474f882f88db
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 6.07ms
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 6.07ms
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 62ed0910-717f-4187-a7a0-7a059808b1af
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 62ed0910-717f-4187-a7a0-7a059808b1af
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 5.89ms
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 5.89ms
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: ba5ee622-6326-40a9-92b4-55cf0e432e69
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: ba5ee622-6326-40a9-92b4-55cf0e432e69
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.25ms
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.25ms
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: ce748916-22a4-4d9f-93de-407e025a9cda
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: ce748916-22a4-4d9f-93de-407e025a9cda
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.52ms
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.52ms
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 1e5cb4cc-973d-417a-9435-2849c9622d03
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 1e5cb4cc-973d-417a-9435-2849c9622d03
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.07ms
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.07ms
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 2ab432aa-6f9a-4719-bff6-487289c27dd1
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 2ab432aa-6f9a-4719-bff6-487289c27dd1
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.56ms
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.56ms
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 98f28175-76d6-48eb-b961-c10106196aa2
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 98f28175-76d6-48eb-b961-c10106196aa2
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.23ms
+2026-01-30 17:48:57 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 4.23ms
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:48:57 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 400 Bad Request"
+2026-01-30 17:51:45 - app.core.logging - INFO - Logging system initialized
+2026-01-30 17:51:47 - app.middleware.logging_middleware - INFO - Request started: GET / - ID: b119f556-7eea-41bb-933d-ff2d27a27bc4
+2026-01-30 17:51:47 - app.middleware.logging_middleware - INFO - Request started: GET / - ID: b119f556-7eea-41bb-933d-ff2d27a27bc4
+2026-01-30 17:51:47 - app.middleware.logging_middleware - INFO - Request completed: GET / - 200 - 1.19ms
+2026-01-30 17:51:47 - app.middleware.logging_middleware - INFO - Request completed: GET / - 200 - 1.19ms
+2026-01-30 17:51:47 - app.middleware.logging_middleware - INFO - Request started: GET /health - ID: b160727f-db1f-4f1f-8f61-b230af6d765a
+2026-01-30 17:51:47 - app.middleware.logging_middleware - INFO - Request started: GET /health - ID: b160727f-db1f-4f1f-8f61-b230af6d765a
+2026-01-30 17:51:47 - app.middleware.logging_middleware - INFO - Request completed: GET /health - 200 - 0.50ms
+2026-01-30 17:51:47 - app.middleware.logging_middleware - INFO - Request completed: GET /health - 200 - 0.50ms
+2026-01-30 17:51:47 - app.middleware.logging_middleware - INFO - Request started: GET /docs - ID: 8e2fb51c-fcf0-4718-a135-9cde3725664b
+2026-01-30 17:51:47 - app.middleware.logging_middleware - INFO - Request started: GET /docs - ID: 8e2fb51c-fcf0-4718-a135-9cde3725664b
+2026-01-30 17:51:47 - app.middleware.logging_middleware - INFO - Request completed: GET /docs - 200 - 0.23ms
+2026-01-30 17:51:47 - app.middleware.logging_middleware - INFO - Request completed: GET /docs - 200 - 0.23ms

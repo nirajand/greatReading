@@ -18,3 +18,11 @@
   {'type': 'missing', 'loc': ('response', 'created_at'), 'msg': 'Field required', 'input': <app.models.user.User object at 0x75fa713fb2c0>, 'url': 'https://errors.pydantic.dev/2.5/v/missing'}
   {'type': 'missing', 'loc': ('response', 'updated_at'), 'msg': 'Field required', 'input': <app.models.user.User object at 0x75fa713fb2c0>, 'url': 'https://errors.pydantic.dev/2.5/v/missing'}
  - 321.63ms
+2026-01-30 17:48:56 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/register - 2 validation errors:
+  {'type': 'missing', 'loc': ('response', 'created_at'), 'msg': 'Field required', 'input': <app.models.user.User object at 0x78ac42956c60>, 'url': 'https://errors.pydantic.dev/2.5/v/missing'}
+  {'type': 'missing', 'loc': ('response', 'updated_at'), 'msg': 'Field required', 'input': <app.models.user.User object at 0x78ac42956c60>, 'url': 'https://errors.pydantic.dev/2.5/v/missing'}
+ - 323.41ms
+2026-01-30 17:48:56 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/register - 2 validation errors:
+  {'type': 'missing', 'loc': ('response', 'created_at'), 'msg': 'Field required', 'input': <app.models.user.User object at 0x78ac42956c60>, 'url': 'https://errors.pydantic.dev/2.5/v/missing'}
+  {'type': 'missing', 'loc': ('response', 'updated_at'), 'msg': 'Field required', 'input': <app.models.user.User object at 0x78ac42956c60>, 'url': 'https://errors.pydantic.dev/2.5/v/missing'}
+ - 323.41ms

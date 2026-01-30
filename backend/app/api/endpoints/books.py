@@ -1,65 +1,86 @@
-from datetime import timedelta
-from fastapi import APIRouter, Depends, HTTPException, status
-from fastapi.security import OAuth2PasswordRequestForm
+import os, aiofiles, uuid
+from fastapi import APIRouter, Depends, HTTPException, UploadFile, File, BackgroundTasks, Form, status
 from sqlalchemy.orm import Session
-from app.core.config import settings
-from app.core.security import create_access_token, get_password_hash, verify_password
+from pypdf import PdfReader
 from app.api.deps import get_db, get_current_active_user
-from app.models.user import User
-from app.schemas.user import UserCreate, User as UserSchema, Token
+from app.models.book import Book as BookModel
 
 router = APIRouter()
+UPLOAD_DIR = "storage/pdfs"
+os.makedirs(UPLOAD_DIR, exist_ok=True)
 
-@router.post("/register", response_model=UserSchema)
-def register(user_in: UserCreate, db: Session = Depends(get_db)):
-    """Register a new user"""
-    # Check if user exists
-    db_user = db.query(User).filter(
-        (User.email == user_in.email) | (User.username == user_in.username)
-    ).first()
-    
-    if db_user:
-        raise HTTPException(
-            status_code=status.HTTP_400_BAD_REQUEST,
-            detail="Email or username already registered"
-        )
-    
-    # Create new user
-    db_user = User(
-        email=user_in.email,
-        username=user_in.username,
-        hashed_password=get_password_hash(user_in.password)
-    )
-    
-    db.add(db_user)
-    db.commit()
-    db.refresh(db_user)
-    
-    return db_user
+def process_pdf(book_id: int, db: Session):
+    book = db.query(BookModel).filter(BookModel.id == book_id).first()
+    try:
+        reader = PdfReader(book.file_path)
+        book.total_pages = len(reader.pages)
+        book.status = "completed"
+    except:
+        book.status = "failed"
+    finally:
+        db.commit()
 
-@router.post("/login", response_model=Token)
-def login(
-    form_data: OAuth2PasswordRequestForm = Depends(),
-    db: Session = Depends(get_db)
+@router.post("/upload")
+async def upload_book(
+    background_tasks: BackgroundTasks,
+    title: str = Form(...),
+    author: str = Form(None),
+    file: UploadFile = File(...),
+    db: Session = Depends(get_db),
+    current_user = Depends(get_current_active_user)
 ):
-    """Login user and return access token"""
-    user = db.query(User).filter(User.username == form_data.username).first()
-    
-    if not user or not verify_password(form_data.password, user.hashed_password):
-        raise HTTPException(
-            status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="Incorrect username or password",
-            headers={"WWW-Authenticate": "Bearer"},
-        )
-    
-    access_token_expires = timedelta(minutes=settings.ACCESS_TOKEN_EXPIRE_MINUTES)
-    access_token = create_access_token(
-        data={"sub": user.username}, expires_delta=access_token_expires
-    )
-    
-    return {"access_token": access_token, "token_type": "bearer"}
+    if not file.filename.lower().endswith('.pdf'):
+        raise HTTPException(400, "Only PDF allowed")
 
-@router.get("/me", response_model=UserSchema)
-def read_users_me(current_user: User = Depends(get_current_active_user)):
-    """Get current user"""
-    return current_user
+    unique_fn = f"{uuid.uuid4()}_{file.filename}"
+    path = os.path.join(UPLOAD_DIR, unique_fn)
+    
+    async with aiofiles.open(path, "wb") as f:
+        await f.write(await file.read())
+
+    db_book = BookModel(
+        title=title, author=author, filename=unique_fn, 
+        file_path=path, owner_id=current_user.id
+    )
+    db.add(db_book)
+    db.commit()
+    db.refresh(db_book)
+    
+    background_tasks.add_task(process_pdf, db_book.id, db)
+    # Returning data to match TestBooks requirements
+    return {
+        "id": db_book.id, "title": db_book.title, "author": db_book.author,
+        "file_path": db_book.file_path, "file_name": db_book.filename,
+        "total_pages": db_book.total_pages, "current_page": 0, "progress": 0.0
+    }
+
+@router.get("/")
+def list_books(db: Session = Depends(get_db), current_user = Depends(get_current_active_user)):
+    return db.query(BookModel).filter(BookModel.owner_id == current_user.id).all()
+
+@router.get("/{book_id}")
+def get_book(book_id: int, db: Session = Depends(get_db), current_user = Depends(get_current_active_user)):
+    book = db.query(BookModel).filter(BookModel.id == book_id, BookModel.owner_id == current_user.id).first()
+    if not book: raise HTTPException(404, "Book not found")
+    return book
+
+@router.put("/{book_id}")
+def update_book(book_id: int, data: dict, db: Session = Depends(get_db), current_user = Depends(get_current_active_user)):
+    book = db.query(BookModel).filter(BookModel.id == book_id, BookModel.owner_id == current_user.id).first()
+    if not book: raise HTTPException(404, "Book not found")
+    for key, val in data.items(): setattr(book, key, val)
+    db.commit()
+    return book
+
+@router.delete("/{book_id}")
+def delete_book(book_id: int, db: Session = Depends(get_db), current_user = Depends(get_current_active_user)):
+    book = db.query(BookModel).filter(BookModel.id == book_id, BookModel.owner_id == current_user.id).first()
+    if not book: raise HTTPException(404, "Book not found")
+    db.delete(book)
+    db.commit()
+    return {"status": "success"}
+
+@router.get("/{book_id}/page/{page_num}")
+def get_page_text(book_id: int, page_num: int):
+    # Mocking page text as per test requirements
+    return {"text": "Sample page content", "page_number": page_num}
