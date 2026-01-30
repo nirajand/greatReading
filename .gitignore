@@ -33,6 +33,8 @@ backend/__pycache__/
 backend/venv/
 backend/env/
 backend/logs/
+backend/storage/
+
 
 # Frontend specific
 frontend/.env
