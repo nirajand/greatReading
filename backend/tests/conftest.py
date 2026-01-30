@@ -4,9 +4,12 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.pool import StaticPool
 
-from app.main import app
-from app.core.database import get_db
-from app.models.base import Base
+# Import app after setting up database
+from app.core.database import Base
+from app.models.user import User
+from app.models.book import Book
+from app.models.dictionary import DictionaryEntry
+from app.models.reading_session import ReadingSession
 
 # Test database
 SQLALCHEMY_TEST_DATABASE_URL = "sqlite:///:memory:"
@@ -18,24 +21,12 @@ engine = create_engine(
 )
 TestingSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
-def override_get_db():
-    try:
-        db = TestingSessionLocal()
-        yield db
-    finally:
-        db.close()
-
-app.dependency_overrides[get_db] = override_get_db
-
-@pytest.fixture(scope="session")
-def db_engine():
-    Base.metadata.create_all(bind=engine)
-    yield engine
-    Base.metadata.drop_all(bind=engine)
+# Create tables
+Base.metadata.create_all(bind=engine)
 
 @pytest.fixture(scope="function")
-def db(db_engine):
-    connection = db_engine.connect()
+def db():
+    connection = engine.connect()
     transaction = connection.begin()
     session = TestingSessionLocal(bind=connection)
     
@@ -47,10 +38,13 @@ def db(db_engine):
 
 @pytest.fixture(scope="function")
 def client(db):
-    app.dependency_overrides[get_db] = lambda: db
+    # Import here to avoid circular imports
+    from app.main import app
+    
+    app.dependency_overrides = {}
+    
     with TestClient(app) as c:
         yield c
-    app.dependency_overrides.clear()
 
 @pytest.fixture
 def test_user_data():
