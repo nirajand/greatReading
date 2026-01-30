@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "@hookform/resolvers": "^5.2.2",
+    "@react-spring/web": "^10.0.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.29.2",
+    "lodash": "^4.17.23",
+    "lucide-react": "^0.563.0",
+    "react-hook-form": "^7.71.1",
+    "sonner": "^2.0.7",
+    "tailwind-merge": "^3.4.0",
+    "tsparticles": "^3.9.1",
+    "tsparticles-engine": "^2.12.0",
+    "tw-animate-css": "^1.4.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.23"
+  }
+}

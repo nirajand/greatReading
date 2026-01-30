@@ -1,313 +1,389 @@
-import { Calendar, TrendingUp, Target, Award, Clock, BookOpen, Star } from 'lucide-react'
+import { useQuery } from '@tanstack/react-query'
+import { motion } from 'framer-motion'
+import { Calendar, PieChart, BarChart3, TrendingUp, Target } from 'lucide-react'
+import GlassCard from '../components/GlassCard'
+import { enhancedApi } from '../services/enhancedApi'
 
-const Stats = () => {
+interface Book {
+  id: number
+  title: string
+  author: string
+  genre: string
+  total_pages: number
+  current_page: number
+  last_read: string
+}
+
+interface ReadingStats {
+  totalPages: number
+  completedBooks: number
+  averageProgress: number
+  readingConsistency: number
+  favoriteGenre: string
+  pagesPerDay: number
+}
+
+export default function Stats() {
+  const { data: books, isLoading } = useQuery<Book[]>({
+    queryKey: ['books'],
+    queryFn: () => enhancedApi.getBooks(),
+  })
+
+  const calculateStats = (): ReadingStats => {
+    if (!books || books.length === 0) {
+      return {
+        totalPages: 0,
+        completedBooks: 0,
+        averageProgress: 0,
+        readingConsistency: 0,
+        favoriteGenre: 'None',
+        pagesPerDay: 0,
+      }
+    }
+
+    const totalPages = books.reduce((sum, book) => sum + book.total_pages, 0)
+    const completedBooks = books.filter(book => book.current_page === book.total_pages).length
+    const averageProgress = Math.round(
+      books.reduce((sum, book) => sum + (book.current_page / book.total_pages), 0) / books.length * 100
+    )
+    
+    // Calculate reading consistency (days with reading activity in last 30 days)
+    const last30Days = Array.from({ length: 30 }, (_, i) => {
+      const date = new Date()
+      date.setDate(date.getDate() - i)
+      return date.toDateString()
+    })
+    
+    const readingDays = new Set(
+      books
+        .map(book => new Date(book.last_read).toDateString())
+        .filter(date => last30Days.includes(date))
+    ).size
+    
+    const readingConsistency = Math.round((readingDays / 30) * 100)
+
+    // Find favorite genre
+    const genreCount: Record<string, number> = {}
+    books.forEach(book => {
+      if (book.genre) {
+        genreCount[book.genre] = (genreCount[book.genre] || 0) + 1
+      }
+    })
+    
+    const favoriteGenre = Object.entries(genreCount)
+      .sort(([,a], [,b]) => b - a)[0]?.[0] || 'Uncategorized'
+
+    // Calculate pages per day (last 7 days)
+    const last7Days = Array.from({ length: 7 }, (_, i) => {
+      const date = new Date()
+      date.setDate(date.getDate() - i)
+      return date.toDateString()
+    })
+    
+    const recentPages = books.reduce((sum, book) => {
+      const lastReadDate = new Date(book.last_read).toDateString()
+      if (last7Days.includes(lastReadDate)) {
+        return sum + Math.min(book.current_page, 50) // Cap at 50 pages per day for calculation
+      }
+      return sum
+    }, 0)
+    
+    const pagesPerDay = Math.round(recentPages / 7)
+
+    return {
+      totalPages,
+      completedBooks,
+      averageProgress,
+      readingConsistency,
+      favoriteGenre,
+      pagesPerDay,
+    }
+  }
+
+  const stats = calculateStats()
+
+  // Generate heatmap data (last 90 days)
+  const generateHeatmapData = () => {
+    const data = []
+    const today = new Date()
+    
+    for (let i = 89; i >= 0; i--) {
+      const date = new Date(today)
+      date.setDate(date.getDate() - i)
+      
+      // Count books read on this day
+      const booksRead = books?.filter(book => 
+        new Date(book.last_read).toDateString() === date.toDateString()
+      ).length || 0
+      
+      data.push({
+        date,
+        count: booksRead,
+        intensity: Math.min(booksRead * 3, 10) // Scale intensity
+      })
+    }
+    
+    return data
+  }
+
+  const heatmapData = generateHeatmapData()
+
+  if (isLoading) {
+    return (
+      <div className="flex items-center justify-center h-96">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-500" />
+      </div>
+    )
+  }
+
   return (
-    <div className="min-h-screen bg-gray-50 p-4 md:p-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="mb-8">
-          <h1 className="text-3xl font-bold">Reading Statistics</h1>
-          <p className="mt-2 text-gray-600">
-            Track your reading progress and achievements
-          </p>
+    <div className="space-y-6">
+      {/* Header */}
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="flex items-center justify-between"
+      >
+        <div>
+          <h1 className="text-3xl font-bold">The Insights</h1>
+          <p className="text-gray-400">Deep dive into your reading patterns</p>
         </div>
-
-        {/* Stats Grid */}
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 mb-8">
-          <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
-            <div className="flex items-center justify-between">
-              <div>
-                <p className="text-sm text-gray-600">Total Reading Time</p>
-                <p className="text-2xl font-bold mt-2">12h 45m</p>
-              </div>
-              <div className="p-3 rounded-lg bg-blue-100 text-blue-600">
-                <Clock className="h-6 w-6" />
-              </div>
-            </div>
-            <div className="mt-4 text-sm text-green-600 flex items-center">
-              <TrendingUp className="h-4 w-4 mr-1" />
-              +15% from last week
-            </div>
-          </div>
-
-          <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
-            <div className="flex items-center justify-between">
-              <div>
-                <p className="text-sm text-gray-600">Books Completed</p>
-                <p className="text-2xl font-bold mt-2">8</p>
-              </div>
-              <div className="p-3 rounded-lg bg-green-100 text-green-600">
-                <BookOpen className="h-6 w-6" />
-              </div>
-            </div>
-            <div className="mt-4 text-sm text-green-600 flex items-center">
-              <TrendingUp className="h-4 w-4 mr-1" />
-              +3 this month
-            </div>
-          </div>
-
-          <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
-            <div className="flex items-center justify-between">
-              <div>
-                <p className="text-sm text-gray-600">Words Learned</p>
-                <p className="text-2xl font-bold mt-2">142</p>
-              </div>
-              <div className="p-3 rounded-lg bg-purple-100 text-purple-600">
-                <Star className="h-6 w-6" />
-              </div>
-            </div>
-            <div className="mt-4 text-sm text-green-600 flex items-center">
-              <TrendingUp className="h-4 w-4 mr-1" />
-              +24 this week
-            </div>
-          </div>
-
-          <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
-            <div className="flex items-center justify-between">
-              <div>
-                <p className="text-sm text-gray-600">Reading Streak</p>
-                <p className="text-2xl font-bold mt-2">14 days</p>
-              </div>
-              <div className="p-3 rounded-lg bg-orange-100 text-orange-600">
-                <Award className="h-6 w-6" />
-              </div>
-            </div>
-            <div className="mt-4 text-sm text-green-600 flex items-center">
-              <Target className="h-4 w-4 mr-1" />
-              Keep going!
-            </div>
-          </div>
+        <div className="flex items-center space-x-2 text-sm text-gray-400">
+          <Calendar className="w-4 h-4" />
+          <span>Last updated: Today</span>
         </div>
+      </motion.div>
 
-        <div className="grid gap-8 lg:grid-cols-2">
-          {/* Reading Activity */}
-          <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
+      {/* Overview Stats */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {[
+          {
+            title: 'Total Pages',
+            value: stats.totalPages.toLocaleString(),
+            icon: BookOpen,
+            color: 'from-purple-500 to-pink-500',
+          },
+          {
+            title: 'Completed Books',
+            value: stats.completedBooks,
+            icon: Target,
+            color: 'from-green-500 to-emerald-500',
+          },
+          {
+            title: 'Avg Progress',
+            value: `${stats.averageProgress}%`,
+            icon: TrendingUp,
+            color: 'from-blue-500 to-cyan-500',
+          },
+          {
+            title: 'Consistency',
+            value: `${stats.readingConsistency}%`,
+            icon: BarChart3,
+            color: 'from-orange-500 to-amber-500',
+          },
+        ].map((stat, index) => (
+          <motion.div
+            key={stat.title}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: index * 0.1 }}
+          >
+            <GlassCard className="p-6">
+              <div className="flex items-center justify-between">
+                <div>
+                  <p className="text-sm text-gray-400">{stat.title}</p>
+                  <p className="text-2xl font-bold mt-2">{stat.value}</p>
+                </div>
+                <div className={`p-3 rounded-lg bg-gradient-to-br ${stat.color}`}>
+                  <stat.icon className="w-6 h-6 text-white" />
+                </div>
+              </div>
+            </GlassCard>
+          </motion.div>
+        ))}
+      </div>
+
+      {/* Main Charts Grid */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        {/* Reading Consistency Heatmap */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.3 }}
+        >
+          <GlassCard className="p-6" hover={false}>
             <div className="flex items-center justify-between mb-6">
-              <h2 className="text-xl font-bold">Reading Activity</h2>
-              <div className="flex items-center gap-2">
-                <Calendar className="h-5 w-5 text-gray-400" />
-                <span className="text-sm text-gray-600">Last 30 days</span>
+              <div>
+                <h2 className="text-xl font-bold">Reading Consistency</h2>
+                <p className="text-sm text-gray-400">Last 90 days</p>
               </div>
+              <Calendar className="w-5 h-5 text-gray-400" />
             </div>
-            
+
             <div className="space-y-4">
-              {[
-                { day: 'Mon', minutes: 45 },
-                { day: 'Tue', minutes: 60 },
-                { day: 'Wed', minutes: 30 },
-                { day: 'Thu', minutes: 75 },
-                { day: 'Fri', minutes: 90 },
-                { day: 'Sat', minutes: 120 },
-                { day: 'Sun', minutes: 45 }
-              ].map((item, index) => (
-                <div key={index} className="flex items-center">
-                  <div className="w-12 text-sm text-gray-600">{item.day}</div>
-                  <div className="flex-1 ml-4">
-                    <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
-                      <div
-                        className="h-full bg-blue-600 rounded-full"
-                        style={{ width: `${(item.minutes / 120) * 100}%` }}
-                      ></div>
-                    </div>
-                  </div>
-                  <div className="w-16 text-right text-sm font-medium">{item.minutes}m</div>
-                </div>
-              ))}
-            </div>
-            
-            <div className="pt-4 border-t">
-              <div className="flex justify-between text-sm">
-                <span className="text-gray-600">Average per day:</span>
-                <span className="font-medium">66 minutes</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Reading Goals */}
-          <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
-            <div className="flex items-center justify-between mb-6">
-              <h2 className="text-xl font-bold">Reading Goals</h2>
-              <Target className="h-5 w-5 text-gray-400" />
-            </div>
-            
-            <div className="space-y-6">
-              <div>
-                <div className="flex justify-between text-sm mb-2">
-                  <span className="font-medium">Daily Reading</span>
-                  <span className="text-gray-600">45/60 minutes</span>
-                </div>
-                <div className="h-3 bg-gray-200 rounded-full overflow-hidden">
-                  <div className="h-full bg-green-500 rounded-full" style={{ width: '75%' }}></div>
-                </div>
-              </div>
-              
-              <div>
-                <div className="flex justify-between text-sm mb-2">
-                  <span className="font-medium">Books This Month</span>
-                  <span className="text-gray-600">2/4 books</span>
-                </div>
-                <div className="h-3 bg-gray-200 rounded-full overflow-hidden">
-                  <div className="h-full bg-blue-500 rounded-full" style={{ width: '50%' }}></div>
-                </div>
-              </div>
-              
-              <div>
-                <div className="flex justify-between text-sm mb-2">
-                  <span className="font-medium">New Words</span>
-                  <span className="text-gray-600">24/50 words</span>
-                </div>
-                <div className="h-3 bg-gray-200 rounded-full overflow-hidden">
-                  <div className="h-full bg-purple-500 rounded-full" style={{ width: '48%' }}></div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="mt-8 p-4 bg-blue-50 rounded-lg">
-              <p className="text-sm text-blue-800">
-                <span className="font-medium">Tip:</span> Set realistic goals and track your progress daily for better consistency.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Recent Achievements */}
-        <div className="mt-8 bg-white rounded-xl p-6 shadow-sm border border-gray-200">
-          <h2 className="text-xl font-bold mb-6">Recent Achievements</h2>
-          
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            <div className="p-4 border border-gray-200 rounded-lg text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 bg-yellow-100 rounded-full mb-3">
-                <Award className="h-6 w-6 text-yellow-600" />
-              </div>
-              <h4 className="font-semibold">7-Day Streak</h4>
-              <p className="text-sm text-gray-600 mt-1">Read for 7 consecutive days</p>
-            </div>
-            
-            <div className="p-4 border border-gray-200 rounded-lg text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 bg-blue-100 rounded-full mb-3">
-                <BookOpen className="h-6 w-6 text-blue-600" />
-              </div>
-              <h4 className="font-semibold">Book Worm</h4>
-              <p className="text-sm text-gray-600 mt-1">Complete 5 books</p>
-            </div>
-            
-            <div className="p-4 border border-gray-200 rounded-lg text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 bg-green-100 rounded-full mb-3">
-                <Star className="h-6 w-6 text-green-600" />
-              </div>
-              <h4 className="font-semibold">Vocabulary Builder</h4>
-              <p className="text-sm text-gray-600 mt-1">Save 100 words</p>
-            </div>
-            
-            <div className="p-4 border border-gray-200 rounded-lg text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 bg-purple-100 rounded-full mb-3">
-                <Clock className="h-6 w-6 text-purple-600" />
-              </div>
-              <h4 className="font-semibold">Focused Reader</h4>
-              <p className="text-sm text-gray-600 mt-1">10+ hours of reading</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Reading History */}
-        <div className="mt-8 bg-white rounded-xl p-6 shadow-sm border border-gray-200">
-          <h2 className="text-xl font-bold mb-6">Reading History</h2>
-          
-          <div className="overflow-x-auto">
-            <table className="w-full">
-              <thead>
-                <tr className="border-b border-gray-200">
-                  <th className="text-left py-3 px-4 text-sm font-medium text-gray-600">Date</th>
-                  <th className="text-left py-3 px-4 text-sm font-medium text-gray-600">Book</th>
-                  <th className="text-left py-3 px-4 text-sm font-medium text-gray-600">Duration</th>
-                  <th className="text-left py-3 px-4 text-sm font-medium text-gray-600">Pages Read</th>
-                  <th className="text-left py-3 px-4 text-sm font-medium text-gray-600">Words Saved</th>
-                </tr>
-              </thead>
-              <tbody>
-                {[
-                  { date: 'Today', book: 'The Great Gatsby', duration: '45m', pages: 12, words: 3 },
-                  { date: 'Yesterday', book: 'To Kill a Mockingbird', duration: '30m', pages: 8, words: 2 },
-                  { date: 'Jan 25', book: '1984', duration: '60m', pages: 15, words: 5 },
-                  { date: 'Jan 24', book: 'Pride and Prejudice', duration: '40m', pages: 10, words: 2 },
-                  { date: 'Jan 23', book: 'The Great Gatsby', duration: '55m', pages: 14, words: 4 },
-                ].map((session, index) => (
-                  <tr key={index} className="border-b border-gray-100 hover:bg-gray-50">
-                    <td className="py-3 px-4 text-sm">{session.date}</td>
-                    <td className="py-3 px-4 text-sm font-medium">{session.book}</td>
-                    <td className="py-3 px-4 text-sm">{session.duration}</td>
-                    <td className="py-3 px-4 text-sm">{session.pages} pages</td>
-                    <td className="py-3 px-4 text-sm">
-                      <span className="inline-flex items-center gap-1">
-                        <Star className="h-3 w-3 text-yellow-500" />
-                        {session.words} words
-                      </span>
-                    </td>
-                  </tr>
+              {/* Heatmap Grid */}
+              <div className="grid grid-cols-13 gap-1">
+                {heatmapData.map((day, i) => (
+                  <div
+                    key={i}
+                    className="aspect-square rounded-sm"
+                    style={{
+                      backgroundColor: `rgba(139, 92, 246, ${day.intensity / 10})`,
+                      border: '1px solid rgba(255, 255, 255, 0.05)',
+                    }}
+                    title={`${day.date.toLocaleDateString()}: ${day.count} books read`}
+                  />
                 ))}
-              </tbody>
-            </table>
-          </div>
-          
-          <div className="mt-6 pt-6 border-t border-gray-200">
-            <div className="flex justify-between text-sm">
-              <span className="text-gray-600">Total this month:</span>
-              <div className="space-y-1 text-right">
-                <div className="font-medium">12 hours of reading</div>
-                <div className="text-gray-600">156 pages • 42 words saved</div>
               </div>
-            </div>
-          </div>
-        </div>
 
-        {/* Monthly Overview */}
-        <div className="mt-8 bg-white rounded-xl p-6 shadow-sm border border-gray-200">
-          <h2 className="text-xl font-bold mb-6">Monthly Overview</h2>
-          
-          <div className="grid gap-6 md:grid-cols-3">
-            <div className="p-4 border border-gray-200 rounded-lg">
-              <div className="text-3xl font-bold text-blue-600">8</div>
-              <p className="text-sm text-gray-600 mt-2">Books Read</p>
-              <div className="mt-2 text-xs text-green-600 flex items-center">
-                <TrendingUp className="h-3 w-3 mr-1" />
-                +2 from last month
+              {/* Legend */}
+              <div className="flex items-center justify-between text-xs text-gray-400">
+                <span>Less</span>
+                <div className="flex space-x-1">
+                  {[0, 2, 4, 6, 8, 10].map((intensity) => (
+                    <div
+                      key={intensity}
+                      className="w-4 h-4 rounded-sm"
+                      style={{
+                        backgroundColor: `rgba(139, 92, 246, ${intensity / 10})`,
+                      }}
+                    />
+                  ))}
+                </div>
+                <span>More</span>
               </div>
             </div>
-            
-            <div className="p-4 border border-gray-200 rounded-lg">
-              <div className="text-3xl font-bold text-green-600">28h</div>
-              <p className="text-sm text-gray-600 mt-2">Total Reading Time</p>
-              <div className="mt-2 text-xs text-green-600 flex items-center">
-                <TrendingUp className="h-3 w-3 mr-1" />
-                +5h from last month
-              </div>
-            </div>
-            
-            <div className="p-4 border border-gray-200 rounded-lg">
-              <div className="text-3xl font-bold text-purple-600">86</div>
-              <p className="text-sm text-gray-600 mt-2">Words Mastered</p>
-              <div className="mt-2 text-xs text-green-600 flex items-center">
-                <TrendingUp className="h-3 w-3 mr-1" />
-                +32 from last month
-              </div>
-            </div>
-          </div>
-          
-          <div className="mt-6 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-blue-100">
-            <div className="flex items-start">
-              <Target className="h-5 w-5 text-blue-600 mt-1 mr-3 flex-shrink-0" />
+          </GlassCard>
+        </motion.div>
+
+        {/* Genre Distribution */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.4 }}
+        >
+          <GlassCard className="p-6" hover={false}>
+            <div className="flex items-center justify-between mb-6">
               <div>
-                <p className="font-medium text-blue-900">Monthly Goal Progress</p>
-                <p className="text-sm text-blue-800 mt-1">
-                  You're on track to complete your monthly goals! Keep up the good work.
-                  You've completed 75% of your reading goals this month.
+                <h2 className="text-xl font-bold">Genre Distribution</h2>
+                <p className="text-sm text-gray-400">Across your library</p>
+              </div>
+              <PieChart className="w-5 h-5 text-gray-400" />
+            </div>
+
+            <div className="space-y-4">
+              {/* Pie Chart Placeholder */}
+              <div className="relative h-48 flex items-center justify-center">
+                <div className="relative w-32 h-32">
+                  {[30, 25, 20, 15, 10].map((percent, i) => (
+                    <div
+                      key={i}
+                      className="absolute inset-0 rounded-full border-8"
+                      style={{
+                        clipPath: `circle(50% at 50% 50%)`,
+                        transform: `rotate(${i * 72}deg)`,
+                        borderColor: [
+                          '#8B5CF6',
+                          '#3B82F6',
+                          '#10B981',
+                          '#F59E0B',
+                          '#EF4444'
+                        ][i],
+                        opacity: 0.7,
+                      }}
+                    />
+                  ))}
+                </div>
+              </div>
+
+              {/* Genre List */}
+              <div className="space-y-2">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center">
+                    <div className="w-3 h-3 rounded-full bg-purple-500 mr-2" />
+                    <span>Fiction</span>
+                  </div>
+                  <span className="text-gray-400">30%</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center">
+                    <div className="w-3 h-3 rounded-full bg-blue-500 mr-2" />
+                    <span>Non-Fiction</span>
+                  </div>
+                  <span className="text-gray-400">25%</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center">
+                    <div className="w-3 h-3 rounded-full bg-green-500 mr-2" />
+                    <span>Science</span>
+                  </div>
+                  <span className="text-gray-400">20%</span>
+                </div>
+              </div>
+
+              <div className="pt-4 border-t border-white/10">
+                <p className="text-sm text-gray-400">
+                  Favorite genre: <span className="text-purple-400 font-medium">{stats.favoriteGenre}</span>
                 </p>
               </div>
             </div>
+          </GlassCard>
+        </motion.div>
+      </div>
+
+      {/* Additional Stats */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* Reading Pace */}
+        <GlassCard className="p-6">
+          <h3 className="font-semibold mb-4">Reading Pace</h3>
+          <div className="space-y-4">
+            <div>
+              <div className="flex justify-between text-sm mb-1">
+                <span>Pages per day</span>
+                <span>{stats.pagesPerDay}</span>
+              </div>
+              <div className="h-2 bg-white/10 rounded-full overflow-hidden">
+                <div 
+                  className="h-full bg-gradient-to-r from-blue-500 to-cyan-500"
+                  style={{ width: `${Math.min(stats.pagesPerDay, 100)}%` }}
+                />
+              </div>
+            </div>
+            <div className="text-sm text-gray-400">
+              {stats.pagesPerDay > 30 
+                ? "You're reading at an excellent pace! 📚" 
+                : stats.pagesPerDay > 15
+                ? "Good progress, keep going! 👍"
+                : "Try to read a few pages each day 💡"}
+            </div>
           </div>
-        </div>
+        </GlassCard>
+
+        {/* Completion Rate */}
+        <GlassCard className="p-6">
+          <h3 className="font-semibold mb-4">Completion Rate</h3>
+          <div className="space-y-4">
+            <div className="flex items-center justify-between">
+              <span className="text-3xl font-bold">
+                {books && books.length > 0
+                  ? Math.round((stats.completedBooks / books.length) * 100)
+                  : 0}%
+              </span>
+              <div className="text-right">
+                <p className="text-sm text-gray-400">Books completed</p>
+                <p className="text-lg">
+                  {stats.completedBooks} / {books?.length || 0}
+                </p>
+              </div>
+            </div>
+            <div className="text-sm text-gray-400">
+              {stats.completedBooks === books?.length && books.length > 0
+                ? "Perfect completion rate! 🌟"
+                : "Finish what you start for better insights"}
+            </div>
+          </div>
+        </GlassCard>
       </div>
     </div>
   )
 }
-
-export default Stats

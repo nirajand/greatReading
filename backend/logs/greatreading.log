@@ -361,3 +361,514 @@ AttributeError: module 'bcrypt' has no attribute '__about__'
 2026-01-30 17:51:47 - app.middleware.logging_middleware - INFO - Request started: GET /docs - ID: 8e2fb51c-fcf0-4718-a135-9cde3725664b
 2026-01-30 17:51:47 - app.middleware.logging_middleware - INFO - Request completed: GET /docs - 200 - 0.23ms
 2026-01-30 17:51:47 - app.middleware.logging_middleware - INFO - Request completed: GET /docs - 200 - 0.23ms
+2026-01-30 18:17:18 - app.core.logging - INFO - Logging system initialized
+2026-01-30 18:20:55 - app.core.logging - INFO - Logging system initialized
+2026-01-30 18:21:04 - app.middleware.logging_middleware - INFO - Request started: GET / - ID: 1d8e16ad-42c3-4cc2-bfcb-910b9c0be6e0
+2026-01-30 18:21:04 - app.middleware.logging_middleware - INFO - Request started: GET / - ID: 1d8e16ad-42c3-4cc2-bfcb-910b9c0be6e0
+2026-01-30 18:21:04 - app.middleware.logging_middleware - INFO - Request completed: GET / - 200 - 0.92ms
+2026-01-30 18:21:04 - app.middleware.logging_middleware - INFO - Request completed: GET / - 200 - 0.92ms
+2026-01-30 18:21:22 - app.middleware.logging_middleware - INFO - Request started: GET /docs - ID: df3bee5d-50ab-412b-944d-26340e1fced1
+2026-01-30 18:21:22 - app.middleware.logging_middleware - INFO - Request started: GET /docs - ID: df3bee5d-50ab-412b-944d-26340e1fced1
+2026-01-30 18:21:22 - app.middleware.logging_middleware - INFO - Request completed: GET /docs - 200 - 0.30ms
+2026-01-30 18:21:22 - app.middleware.logging_middleware - INFO - Request completed: GET /docs - 200 - 0.30ms
+2026-01-30 18:21:22 - app.middleware.logging_middleware - INFO - Request started: GET /openapi.json - ID: c4958fda-2ce4-4646-ab66-f935c92e55c6
+2026-01-30 18:21:22 - app.middleware.logging_middleware - INFO - Request started: GET /openapi.json - ID: c4958fda-2ce4-4646-ab66-f935c92e55c6
+2026-01-30 18:21:23 - app.middleware.logging_middleware - INFO - Request completed: GET /openapi.json - 200 - 20.14ms
+2026-01-30 18:21:23 - app.middleware.logging_middleware - INFO - Request completed: GET /openapi.json - 200 - 20.14ms
+2026-01-30 18:43:56 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:03:52 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:05:28 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:05:57 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:06:02 - app.middleware.logging_middleware - INFO - Request started: GET / - ID: 232f9e3a-2a0c-4c00-adfc-b137ca35b2c6
+2026-01-30 19:06:02 - app.middleware.logging_middleware - INFO - Request started: GET / - ID: 232f9e3a-2a0c-4c00-adfc-b137ca35b2c6
+2026-01-30 19:06:02 - app.middleware.logging_middleware - INFO - Request completed: GET / - 200 - 1.13ms
+2026-01-30 19:06:02 - app.middleware.logging_middleware - INFO - Request completed: GET / - 200 - 1.13ms
+2026-01-30 19:06:11 - app.middleware.logging_middleware - INFO - Request started: GET /docs - ID: a67994d0-d2ac-4445-83eb-9ba2318260b2
+2026-01-30 19:06:11 - app.middleware.logging_middleware - INFO - Request started: GET /docs - ID: a67994d0-d2ac-4445-83eb-9ba2318260b2
+2026-01-30 19:06:11 - app.middleware.logging_middleware - INFO - Request completed: GET /docs - 200 - 0.35ms
+2026-01-30 19:06:11 - app.middleware.logging_middleware - INFO - Request completed: GET /docs - 200 - 0.35ms
+2026-01-30 19:06:11 - app.middleware.logging_middleware - INFO - Request started: GET /openapi.json - ID: fe74a49e-0a00-4f39-96df-516d284c2d12
+2026-01-30 19:06:11 - app.middleware.logging_middleware - INFO - Request started: GET /openapi.json - ID: fe74a49e-0a00-4f39-96df-516d284c2d12
+2026-01-30 19:06:11 - app.middleware.logging_middleware - INFO - Request completed: GET /openapi.json - 200 - 21.27ms
+2026-01-30 19:06:11 - app.middleware.logging_middleware - INFO - Request completed: GET /openapi.json - 200 - 21.27ms
+2026-01-30 19:07:50 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:07:57 - app.middleware.logging_middleware - INFO - Request started: GET /docs - ID: 5787894e-b9bb-4fad-9bdb-8b15b6f17a57
+2026-01-30 19:07:57 - app.middleware.logging_middleware - INFO - Request started: GET /docs - ID: 5787894e-b9bb-4fad-9bdb-8b15b6f17a57
+2026-01-30 19:07:57 - app.middleware.logging_middleware - INFO - Request completed: GET /docs - 200 - 0.40ms
+2026-01-30 19:07:57 - app.middleware.logging_middleware - INFO - Request completed: GET /docs - 200 - 0.40ms
+2026-01-30 19:07:57 - app.middleware.logging_middleware - INFO - Request started: GET /openapi.json - ID: 70d2b1c7-5287-411d-8a30-55482f3d1aad
+2026-01-30 19:07:57 - app.middleware.logging_middleware - INFO - Request started: GET /openapi.json - ID: 70d2b1c7-5287-411d-8a30-55482f3d1aad
+2026-01-30 19:07:57 - app.middleware.logging_middleware - INFO - Request completed: GET /openapi.json - 200 - 33.25ms
+2026-01-30 19:07:57 - app.middleware.logging_middleware - INFO - Request completed: GET /openapi.json - 200 - 33.25ms
+2026-01-30 19:10:22 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:11:27 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:11:30 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:11:58 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:12:01 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:12:03 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:12:05 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:12:08 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:12:11 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:15:22 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:15:27 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:21:31 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:22:56 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:25:06 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:25:10 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:25:48 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: 8693fb03-a3bb-45ea-9f94-f8c7ca4ceb73
+2026-01-30 19:25:48 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: 8693fb03-a3bb-45ea-9f94-f8c7ca4ceb73
+2026-01-30 19:25:48 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/login - Mapper 'Mapper[User(users)]' has no property 'dictionary_entries'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called. - 8.79ms
+2026-01-30 19:25:48 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/login - Mapper 'Mapper[User(users)]' has no property 'dictionary_entries'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called. - 8.79ms
+2026-01-30 19:25:49 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: 40bb0a14-de3f-4c09-ab7d-bd28dcaef019
+2026-01-30 19:25:49 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: 40bb0a14-de3f-4c09-ab7d-bd28dcaef019
+2026-01-30 19:25:49 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/login - One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[DictionaryEntry(dictionary_entries)]'. Original exception was: Mapper 'Mapper[User(users)]' has no property 'dictionary_entries'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called. - 1.53ms
+2026-01-30 19:25:49 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/login - One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[DictionaryEntry(dictionary_entries)]'. Original exception was: Mapper 'Mapper[User(users)]' has no property 'dictionary_entries'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called. - 1.53ms
+2026-01-30 19:28:12 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:31:21 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:32:02 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:32:13 - app.middleware.logging_middleware - INFO - Request started: GET /docs - ID: 383a20f4-4b73-4b9a-9696-cc08d4da3c8a
+2026-01-30 19:32:13 - app.middleware.logging_middleware - INFO - Request started: GET /docs - ID: 383a20f4-4b73-4b9a-9696-cc08d4da3c8a
+2026-01-30 19:32:13 - app.middleware.logging_middleware - INFO - Request completed: GET /docs - 200 - 0.40ms
+2026-01-30 19:32:13 - app.middleware.logging_middleware - INFO - Request completed: GET /docs - 200 - 0.40ms
+2026-01-30 19:32:13 - app.middleware.logging_middleware - INFO - Request started: GET /openapi.json - ID: 98ce88bb-e5c8-4332-a926-ceb57f9fc5e7
+2026-01-30 19:32:13 - app.middleware.logging_middleware - INFO - Request started: GET /openapi.json - ID: 98ce88bb-e5c8-4332-a926-ceb57f9fc5e7
+2026-01-30 19:32:13 - app.middleware.logging_middleware - INFO - Request completed: GET /openapi.json - 200 - 20.42ms
+2026-01-30 19:32:13 - app.middleware.logging_middleware - INFO - Request completed: GET /openapi.json - 200 - 20.42ms
+2026-01-30 19:32:22 - app.middleware.logging_middleware - INFO - Request started: GET / - ID: ea599310-bf5a-4260-b34f-56fdfd100c73
+2026-01-30 19:32:22 - app.middleware.logging_middleware - INFO - Request started: GET / - ID: ea599310-bf5a-4260-b34f-56fdfd100c73
+2026-01-30 19:32:22 - app.middleware.logging_middleware - INFO - Request completed: GET / - 200 - 0.94ms
+2026-01-30 19:32:22 - app.middleware.logging_middleware - INFO - Request completed: GET / - 200 - 0.94ms
+2026-01-30 19:32:26 - app.middleware.logging_middleware - INFO - Request started: GET / - ID: 6f94062e-93a2-48ef-b58d-2da13ee2f937
+2026-01-30 19:32:26 - app.middleware.logging_middleware - INFO - Request started: GET / - ID: 6f94062e-93a2-48ef-b58d-2da13ee2f937
+2026-01-30 19:32:26 - app.middleware.logging_middleware - INFO - Request completed: GET / - 200 - 0.55ms
+2026-01-30 19:32:26 - app.middleware.logging_middleware - INFO - Request completed: GET / - 200 - 0.55ms
+2026-01-30 19:32:40 - app.middleware.logging_middleware - INFO - Request started: GET /docs - ID: abc7c32e-2691-4df0-a52c-32910ad6e8cd
+2026-01-30 19:32:40 - app.middleware.logging_middleware - INFO - Request started: GET /docs - ID: abc7c32e-2691-4df0-a52c-32910ad6e8cd
+2026-01-30 19:32:40 - app.middleware.logging_middleware - INFO - Request completed: GET /docs - 200 - 0.32ms
+2026-01-30 19:32:40 - app.middleware.logging_middleware - INFO - Request completed: GET /docs - 200 - 0.32ms
+2026-01-30 19:32:40 - app.middleware.logging_middleware - INFO - Request started: GET /openapi.json - ID: cda034fc-8b44-4a4c-86e1-dd672b843824
+2026-01-30 19:32:40 - app.middleware.logging_middleware - INFO - Request started: GET /openapi.json - ID: cda034fc-8b44-4a4c-86e1-dd672b843824
+2026-01-30 19:32:40 - app.middleware.logging_middleware - INFO - Request completed: GET /openapi.json - 200 - 0.62ms
+2026-01-30 19:32:40 - app.middleware.logging_middleware - INFO - Request completed: GET /openapi.json - 200 - 0.62ms
+2026-01-30 19:33:27 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: 86ced2d0-a387-4ecb-b865-f624c770ffe7
+2026-01-30 19:33:27 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: 86ced2d0-a387-4ecb-b865-f624c770ffe7
+2026-01-30 19:33:27 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/login - Mapper 'Mapper[User(users)]' has no property 'reading_sessions'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called. - 9.74ms
+2026-01-30 19:33:27 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/login - Mapper 'Mapper[User(users)]' has no property 'reading_sessions'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called. - 9.74ms
+2026-01-30 19:33:50 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: 33bfc84e-0cfb-4f3e-810a-a51c6a268f4a
+2026-01-30 19:33:50 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: 33bfc84e-0cfb-4f3e-810a-a51c6a268f4a
+2026-01-30 19:33:50 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/login - One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[ReadingSession(reading_sessions)]'. Original exception was: Mapper 'Mapper[User(users)]' has no property 'reading_sessions'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called. - 1.94ms
+2026-01-30 19:33:50 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/login - One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[ReadingSession(reading_sessions)]'. Original exception was: Mapper 'Mapper[User(users)]' has no property 'reading_sessions'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called. - 1.94ms
+2026-01-30 19:36:35 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:36:40 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:36:46 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:36:49 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:36:51 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:37:03 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:37:11 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:37:16 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:37:18 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:37:20 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:37:40 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:37:54 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:38:09 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:38:24 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: a5afae75-3edc-42a8-911b-5ce70ebc793f
+2026-01-30 19:38:24 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: a5afae75-3edc-42a8-911b-5ce70ebc793f
+2026-01-30 19:38:24 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/login - Mapper 'Mapper[User(users)]' has no property 'reading_sessions'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called. - 10.79ms
+2026-01-30 19:38:24 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/login - Mapper 'Mapper[User(users)]' has no property 'reading_sessions'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called. - 10.79ms
+2026-01-30 19:38:45 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:39:04 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:39:11 - app.middleware.logging_middleware - INFO - Request started: GET / - ID: 4a5bc371-4a7c-4c76-baab-2009131b7195
+2026-01-30 19:39:11 - app.middleware.logging_middleware - INFO - Request started: GET / - ID: 4a5bc371-4a7c-4c76-baab-2009131b7195
+2026-01-30 19:39:11 - app.middleware.logging_middleware - INFO - Request completed: GET / - 200 - 0.90ms
+2026-01-30 19:39:11 - app.middleware.logging_middleware - INFO - Request completed: GET / - 200 - 0.90ms
+2026-01-30 19:39:22 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:39:56 - app.middleware.logging_middleware - INFO - Request started: GET / - ID: bc55131a-9905-4262-8d48-a88a785f81af
+2026-01-30 19:39:56 - app.middleware.logging_middleware - INFO - Request started: GET / - ID: bc55131a-9905-4262-8d48-a88a785f81af
+2026-01-30 19:39:56 - app.middleware.logging_middleware - INFO - Request completed: GET / - 200 - 0.89ms
+2026-01-30 19:39:56 - app.middleware.logging_middleware - INFO - Request completed: GET / - 200 - 0.89ms
+2026-01-30 19:40:11 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:40:23 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: 333232ca-b5b1-45a3-a6bf-cfd4c49d823b
+2026-01-30 19:40:23 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: 333232ca-b5b1-45a3-a6bf-cfd4c49d823b
+2026-01-30 19:40:23 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/login - Mapper 'Mapper[User(users)]' has no property 'reading_sessions'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called. - 11.68ms
+2026-01-30 19:40:23 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/login - Mapper 'Mapper[User(users)]' has no property 'reading_sessions'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called. - 11.68ms
+2026-01-30 19:41:40 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:41:48 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: e6d0a0a3-543d-472a-a590-45ab6acff9d3
+2026-01-30 19:41:48 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: e6d0a0a3-543d-472a-a590-45ab6acff9d3
+2026-01-30 19:41:48 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/login - Mapper 'Mapper[User(users)]' has no property 'reading_sessions'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called. - 10.64ms
+2026-01-30 19:41:48 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/login - Mapper 'Mapper[User(users)]' has no property 'reading_sessions'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called. - 10.64ms
+2026-01-30 19:41:58 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: b0262a91-d1e0-42e7-8b0c-fe76a5d85677
+2026-01-30 19:41:58 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: b0262a91-d1e0-42e7-8b0c-fe76a5d85677
+2026-01-30 19:41:58 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/login - One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[ReadingSession(reading_sessions)]'. Original exception was: Mapper 'Mapper[User(users)]' has no property 'reading_sessions'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called. - 2.14ms
+2026-01-30 19:41:58 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/login - One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[ReadingSession(reading_sessions)]'. Original exception was: Mapper 'Mapper[User(users)]' has no property 'reading_sessions'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called. - 2.14ms
+2026-01-30 19:43:59 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: f1367ba3-d0f1-47e1-8844-7a95b6a98622
+2026-01-30 19:43:59 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: f1367ba3-d0f1-47e1-8844-7a95b6a98622
+2026-01-30 19:43:59 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/login - One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[ReadingSession(reading_sessions)]'. Original exception was: Mapper 'Mapper[User(users)]' has no property 'reading_sessions'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called. - 1.53ms
+2026-01-30 19:43:59 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/login - One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[ReadingSession(reading_sessions)]'. Original exception was: Mapper 'Mapper[User(users)]' has no property 'reading_sessions'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called. - 1.53ms
+2026-01-30 19:44:13 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:44:19 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:45:01 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:45:02 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:45:13 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:45:18 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: dfb876c7-1e25-4e41-abfd-b8d14bed86d8
+2026-01-30 19:45:18 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: dfb876c7-1e25-4e41-abfd-b8d14bed86d8
+2026-01-30 19:45:18 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/login - 401 - 15.77ms
+2026-01-30 19:45:18 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/login - 401 - 15.77ms
+2026-01-30 19:45:43 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:45:45 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:45:50 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: 8af6664e-ec6e-426e-83c4-897a6dfbcd8e
+2026-01-30 19:45:50 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: 8af6664e-ec6e-426e-83c4-897a6dfbcd8e
+2026-01-30 19:45:50 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/login - 401 - 16.72ms
+2026-01-30 19:45:50 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/login - 401 - 16.72ms
+2026-01-30 19:45:52 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: d11f7a11-9d90-4186-bfe2-925f4befa58e
+2026-01-30 19:45:52 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: d11f7a11-9d90-4186-bfe2-925f4befa58e
+2026-01-30 19:45:52 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/login - 401 - 2.33ms
+2026-01-30 19:45:52 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/login - 401 - 2.33ms
+2026-01-30 19:45:53 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: 4440e8d7-aec9-41be-86b1-7f48c0e05eef
+2026-01-30 19:45:53 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: 4440e8d7-aec9-41be-86b1-7f48c0e05eef
+2026-01-30 19:45:53 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/login - 401 - 2.18ms
+2026-01-30 19:45:53 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/login - 401 - 2.18ms
+2026-01-30 19:46:25 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: ca2a0068-214f-49c9-880e-17ebc6897682
+2026-01-30 19:46:25 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: ca2a0068-214f-49c9-880e-17ebc6897682
+2026-01-30 19:46:25 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/login - 401 - 2.15ms
+2026-01-30 19:46:25 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/login - 401 - 2.15ms
+2026-01-30 19:46:30 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: 0472fd73-2310-4337-a65c-340f2f234fd0
+2026-01-30 19:46:30 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: 0472fd73-2310-4337-a65c-340f2f234fd0
+2026-01-30 19:46:30 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/login - 401 - 2.60ms
+2026-01-30 19:46:30 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/login - 401 - 2.60ms
+2026-01-30 19:48:56 - app.middleware.logging_middleware - INFO - Request started: GET / - ID: 1939ff6c-fe9e-4f3c-9067-3a6883cb5791
+2026-01-30 19:48:56 - app.middleware.logging_middleware - INFO - Request started: GET / - ID: 1939ff6c-fe9e-4f3c-9067-3a6883cb5791
+2026-01-30 19:48:56 - app.middleware.logging_middleware - INFO - Request completed: GET / - 200 - 0.55ms
+2026-01-30 19:48:56 - app.middleware.logging_middleware - INFO - Request completed: GET / - 200 - 0.55ms
+2026-01-30 19:49:01 - app.middleware.logging_middleware - INFO - Request started: GET /docs - ID: 581d7a14-5219-4669-ad4e-482dc4301b05
+2026-01-30 19:49:01 - app.middleware.logging_middleware - INFO - Request started: GET /docs - ID: 581d7a14-5219-4669-ad4e-482dc4301b05
+2026-01-30 19:49:01 - app.middleware.logging_middleware - INFO - Request completed: GET /docs - 200 - 0.29ms
+2026-01-30 19:49:01 - app.middleware.logging_middleware - INFO - Request completed: GET /docs - 200 - 0.29ms
+2026-01-30 19:49:01 - app.middleware.logging_middleware - INFO - Request started: GET /openapi.json - ID: 73b90337-82e1-4f66-993a-5af4b853cd3e
+2026-01-30 19:49:01 - app.middleware.logging_middleware - INFO - Request started: GET /openapi.json - ID: 73b90337-82e1-4f66-993a-5af4b853cd3e
+2026-01-30 19:49:01 - app.middleware.logging_middleware - INFO - Request completed: GET /openapi.json - 200 - 21.02ms
+2026-01-30 19:49:01 - app.middleware.logging_middleware - INFO - Request completed: GET /openapi.json - 200 - 21.02ms
+2026-01-30 19:53:17 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: 519e36ef-aadc-475f-9e4f-03cf296be08c
+2026-01-30 19:53:17 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: 519e36ef-aadc-475f-9e4f-03cf296be08c
+2026-01-30 19:53:17 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/login - 401 - 1.97ms
+2026-01-30 19:53:17 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/login - 401 - 1.97ms
+2026-01-30 19:53:28 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: 2a8ce207-eda1-4f8c-999f-24d365f2bd66
+2026-01-30 19:53:28 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: 2a8ce207-eda1-4f8c-999f-24d365f2bd66
+2026-01-30 19:53:29 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/login - 200 - 288.69ms
+2026-01-30 19:53:29 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/login - 200 - 288.69ms
+2026-01-30 19:53:29 - app.middleware.logging_middleware - INFO - Request started: GET /api/auth/me - ID: 03a946af-e4ff-44b7-b1b7-aa824ad58a5e
+2026-01-30 19:53:29 - app.middleware.logging_middleware - INFO - Request started: GET /api/auth/me - ID: 03a946af-e4ff-44b7-b1b7-aa824ad58a5e
+2026-01-30 19:53:29 - app.middleware.logging_middleware - INFO - Request completed: GET /api/auth/me - 400 - 4.37ms
+2026-01-30 19:53:29 - app.middleware.logging_middleware - INFO - Request completed: GET /api/auth/me - 400 - 4.37ms
+2026-01-30 19:53:45 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: a946fefb-22b8-42eb-901b-e773f73d373b
+2026-01-30 19:53:45 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: a946fefb-22b8-42eb-901b-e773f73d373b
+2026-01-30 19:53:45 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/register - 2 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None, 'url': 'https://errors.pydantic.dev/2.5/v/datetime_type'}
+  {'type': 'datetime_type', 'loc': ('response', 'updated_at'), 'msg': 'Input should be a valid datetime', 'input': None, 'url': 'https://errors.pydantic.dev/2.5/v/datetime_type'}
+ - 278.65ms
+2026-01-30 19:53:45 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/register - 2 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None, 'url': 'https://errors.pydantic.dev/2.5/v/datetime_type'}
+  {'type': 'datetime_type', 'loc': ('response', 'updated_at'), 'msg': 'Input should be a valid datetime', 'input': None, 'url': 'https://errors.pydantic.dev/2.5/v/datetime_type'}
+ - 278.65ms
+2026-01-30 19:53:52 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: 081b1c87-f694-4b65-9a61-a95701cbd7d7
+2026-01-30 19:53:52 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: 081b1c87-f694-4b65-9a61-a95701cbd7d7
+2026-01-30 19:53:52 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/login - 200 - 260.61ms
+2026-01-30 19:53:52 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/login - 200 - 260.61ms
+2026-01-30 19:53:52 - app.middleware.logging_middleware - INFO - Request started: GET /api/auth/me - ID: 5736d019-53e5-447e-99b3-6066f1e3214e
+2026-01-30 19:53:52 - app.middleware.logging_middleware - INFO - Request started: GET /api/auth/me - ID: 5736d019-53e5-447e-99b3-6066f1e3214e
+2026-01-30 19:53:52 - app.middleware.logging_middleware - ERROR - Request error: GET /api/auth/me - 2 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None, 'url': 'https://errors.pydantic.dev/2.5/v/datetime_type'}
+  {'type': 'datetime_type', 'loc': ('response', 'updated_at'), 'msg': 'Input should be a valid datetime', 'input': None, 'url': 'https://errors.pydantic.dev/2.5/v/datetime_type'}
+ - 2.66ms
+2026-01-30 19:53:52 - app.middleware.logging_middleware - ERROR - Request error: GET /api/auth/me - 2 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None, 'url': 'https://errors.pydantic.dev/2.5/v/datetime_type'}
+  {'type': 'datetime_type', 'loc': ('response', 'updated_at'), 'msg': 'Input should be a valid datetime', 'input': None, 'url': 'https://errors.pydantic.dev/2.5/v/datetime_type'}
+ - 2.66ms
+2026-01-30 19:55:28 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: 85493d84-aae7-40fa-ab49-affbcb356bfe
+2026-01-30 19:55:28 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: 85493d84-aae7-40fa-ab49-affbcb356bfe
+2026-01-30 19:55:29 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/login - 200 - 264.41ms
+2026-01-30 19:55:29 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/login - 200 - 264.41ms
+2026-01-30 19:55:29 - app.middleware.logging_middleware - INFO - Request started: GET /api/auth/me - ID: b10873f2-f3b9-49bb-8407-a090a0ad52f4
+2026-01-30 19:55:29 - app.middleware.logging_middleware - INFO - Request started: GET /api/auth/me - ID: b10873f2-f3b9-49bb-8407-a090a0ad52f4
+2026-01-30 19:55:29 - app.middleware.logging_middleware - ERROR - Request error: GET /api/auth/me - 2 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None, 'url': 'https://errors.pydantic.dev/2.5/v/datetime_type'}
+  {'type': 'datetime_type', 'loc': ('response', 'updated_at'), 'msg': 'Input should be a valid datetime', 'input': None, 'url': 'https://errors.pydantic.dev/2.5/v/datetime_type'}
+ - 2.12ms
+2026-01-30 19:55:29 - app.middleware.logging_middleware - ERROR - Request error: GET /api/auth/me - 2 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None, 'url': 'https://errors.pydantic.dev/2.5/v/datetime_type'}
+  {'type': 'datetime_type', 'loc': ('response', 'updated_at'), 'msg': 'Input should be a valid datetime', 'input': None, 'url': 'https://errors.pydantic.dev/2.5/v/datetime_type'}
+ - 2.12ms
+2026-01-30 19:55:30 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: 892fcdc5-13f7-43d5-aa21-435762b25b7a
+2026-01-30 19:55:30 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: 892fcdc5-13f7-43d5-aa21-435762b25b7a
+2026-01-30 19:55:31 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/login - 200 - 260.29ms
+2026-01-30 19:55:31 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/login - 200 - 260.29ms
+2026-01-30 19:55:31 - app.middleware.logging_middleware - INFO - Request started: GET /api/auth/me - ID: dda7b4f3-f0d6-44fa-9fa7-4111f440155f
+2026-01-30 19:55:31 - app.middleware.logging_middleware - INFO - Request started: GET /api/auth/me - ID: dda7b4f3-f0d6-44fa-9fa7-4111f440155f
+2026-01-30 19:55:31 - app.middleware.logging_middleware - ERROR - Request error: GET /api/auth/me - 2 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None, 'url': 'https://errors.pydantic.dev/2.5/v/datetime_type'}
+  {'type': 'datetime_type', 'loc': ('response', 'updated_at'), 'msg': 'Input should be a valid datetime', 'input': None, 'url': 'https://errors.pydantic.dev/2.5/v/datetime_type'}
+ - 2.30ms
+2026-01-30 19:55:31 - app.middleware.logging_middleware - ERROR - Request error: GET /api/auth/me - 2 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None, 'url': 'https://errors.pydantic.dev/2.5/v/datetime_type'}
+  {'type': 'datetime_type', 'loc': ('response', 'updated_at'), 'msg': 'Input should be a valid datetime', 'input': None, 'url': 'https://errors.pydantic.dev/2.5/v/datetime_type'}
+ - 2.30ms
+2026-01-30 19:57:37 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:57:39 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:57:43 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:57:45 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:57:50 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:57:54 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:57:56 - app.core.logging - INFO - Logging system initialized
+2026-01-30 19:58:48 - app.middleware.logging_middleware - INFO - Request started: GET /api/auth/me - ID: eb8d22e3-2b94-4f03-ae15-673847270b94
+2026-01-30 19:58:48 - app.middleware.logging_middleware - INFO - Request started: GET /api/auth/me - ID: eb8d22e3-2b94-4f03-ae15-673847270b94
+2026-01-30 19:58:48 - app.middleware.logging_middleware - INFO - Request completed: GET /api/auth/me - 200 - 21.00ms
+2026-01-30 19:58:48 - app.middleware.logging_middleware - INFO - Request completed: GET /api/auth/me - 200 - 21.00ms
+2026-01-30 19:58:48 - app.middleware.logging_middleware - INFO - Request started: GET /api/auth/me - ID: 1bcfbcbe-ca8d-4e0b-abee-1d76328fdc92
+2026-01-30 19:58:48 - app.middleware.logging_middleware - INFO - Request started: GET /api/auth/me - ID: 1bcfbcbe-ca8d-4e0b-abee-1d76328fdc92
+2026-01-30 19:58:48 - app.middleware.logging_middleware - INFO - Request completed: GET /api/auth/me - 200 - 2.51ms
+2026-01-30 19:58:48 - app.middleware.logging_middleware - INFO - Request completed: GET /api/auth/me - 200 - 2.51ms
+2026-01-30 19:59:07 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 12549771-8bd9-486a-a742-9cf34dd8c8dd
+2026-01-30 19:59:07 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 12549771-8bd9-486a-a742-9cf34dd8c8dd
+2026-01-30 19:59:07 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 3.49ms
+2026-01-30 19:59:07 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 3.49ms
+2026-01-30 19:59:14 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 5fa54177-a99c-41a3-9fc1-d8004daaa120
+2026-01-30 19:59:14 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 5fa54177-a99c-41a3-9fc1-d8004daaa120
+2026-01-30 19:59:14 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 2.29ms
+2026-01-30 19:59:14 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 2.29ms
+2026-01-30 19:59:20 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 5d40de83-95d1-4e6e-b5ff-91b2981d3240
+2026-01-30 19:59:20 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 5d40de83-95d1-4e6e-b5ff-91b2981d3240
+2026-01-30 19:59:20 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 200 - 290.85ms
+2026-01-30 19:59:20 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 200 - 290.85ms
+2026-01-30 19:59:20 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: 7347177f-1059-48ed-be24-dc78b03189ef
+2026-01-30 19:59:20 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: 7347177f-1059-48ed-be24-dc78b03189ef
+2026-01-30 19:59:20 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/login - 200 - 260.40ms
+2026-01-30 19:59:20 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/login - 200 - 260.40ms
+2026-01-30 19:59:20 - app.middleware.logging_middleware - INFO - Request started: GET /api/auth/me - ID: afd42547-5a8c-49e0-8b56-ed4b3a47927c
+2026-01-30 19:59:20 - app.middleware.logging_middleware - INFO - Request started: GET /api/auth/me - ID: afd42547-5a8c-49e0-8b56-ed4b3a47927c
+2026-01-30 19:59:20 - app.middleware.logging_middleware - INFO - Request completed: GET /api/auth/me - 200 - 2.17ms
+2026-01-30 19:59:20 - app.middleware.logging_middleware - INFO - Request completed: GET /api/auth/me - 200 - 2.17ms
+2026-01-30 20:05:07 - app.core.logging - INFO - Logging system initialized
+2026-01-30 20:06:15 - app.middleware.logging_middleware - INFO - Request started: GET /api/auth/me - ID: ab0dd46f-8e78-4972-bf76-9a6e0ed168a7
+2026-01-30 20:06:15 - app.middleware.logging_middleware - INFO - Request started: GET /api/auth/me - ID: ab0dd46f-8e78-4972-bf76-9a6e0ed168a7
+2026-01-30 20:06:15 - app.middleware.logging_middleware - INFO - Request completed: GET /api/auth/me - 200 - 23.57ms
+2026-01-30 20:06:15 - app.middleware.logging_middleware - INFO - Request completed: GET /api/auth/me - 200 - 23.57ms
+2026-01-30 20:06:15 - app.middleware.logging_middleware - INFO - Request started: GET /api/auth/me - ID: b8047d20-31e5-4148-a74f-33f6de64b45c
+2026-01-30 20:06:15 - app.middleware.logging_middleware - INFO - Request started: GET /api/auth/me - ID: b8047d20-31e5-4148-a74f-33f6de64b45c
+2026-01-30 20:06:15 - app.middleware.logging_middleware - INFO - Request completed: GET /api/auth/me - 200 - 2.89ms
+2026-01-30 20:06:15 - app.middleware.logging_middleware - INFO - Request completed: GET /api/auth/me - 200 - 2.89ms
+2026-01-30 20:06:20 - app.middleware.logging_middleware - INFO - Request started: GET /api/auth/me - ID: 54828d60-e26e-4f06-b74e-4cb85a409ba1
+2026-01-30 20:06:20 - app.middleware.logging_middleware - INFO - Request started: GET /api/auth/me - ID: 54828d60-e26e-4f06-b74e-4cb85a409ba1
+2026-01-30 20:06:20 - app.middleware.logging_middleware - INFO - Request completed: GET /api/auth/me - 200 - 3.08ms
+2026-01-30 20:06:20 - app.middleware.logging_middleware - INFO - Request completed: GET /api/auth/me - 200 - 3.08ms
+2026-01-30 20:06:20 - app.middleware.logging_middleware - INFO - Request started: GET /api/auth/me - ID: 45755e18-9a51-41aa-8ff6-ac73097f9f63
+2026-01-30 20:06:20 - app.middleware.logging_middleware - INFO - Request started: GET /api/auth/me - ID: 45755e18-9a51-41aa-8ff6-ac73097f9f63
+2026-01-30 20:06:20 - app.middleware.logging_middleware - INFO - Request completed: GET /api/auth/me - 200 - 2.40ms
+2026-01-30 20:06:20 - app.middleware.logging_middleware - INFO - Request completed: GET /api/auth/me - 200 - 2.40ms
+2026-01-30 20:11:15 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: 995447b3-f483-4387-8d0f-5ee7db41f4d1
+2026-01-30 20:11:15 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: 995447b3-f483-4387-8d0f-5ee7db41f4d1
+2026-01-30 20:11:15 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/login - 401 - 282.78ms
+2026-01-30 20:11:15 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/login - 401 - 282.78ms
+2026-01-30 20:11:24 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: e09d0c5a-2bba-4932-9de0-11f73eea4900
+2026-01-30 20:11:24 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: e09d0c5a-2bba-4932-9de0-11f73eea4900
+2026-01-30 20:11:24 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/login - 401 - 265.01ms
+2026-01-30 20:11:24 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/login - 401 - 265.01ms
+2026-01-30 20:30:30 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: 09aecaa5-b16d-413d-a7d8-3fe5951c5837
+2026-01-30 20:30:30 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: 09aecaa5-b16d-413d-a7d8-3fe5951c5837
+2026-01-30 20:30:30 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/login - 200 - 259.95ms
+2026-01-30 20:30:30 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/login - 200 - 259.95ms
+2026-01-30 20:30:31 - app.middleware.logging_middleware - INFO - Request started: GET /api/auth/me - ID: 195cd376-6177-4839-9037-02b402e55b76
+2026-01-30 20:30:31 - app.middleware.logging_middleware - INFO - Request started: GET /api/auth/me - ID: 195cd376-6177-4839-9037-02b402e55b76
+2026-01-30 20:30:31 - app.middleware.logging_middleware - INFO - Request completed: GET /api/auth/me - 200 - 2.44ms
+2026-01-30 20:30:31 - app.middleware.logging_middleware - INFO - Request completed: GET /api/auth/me - 200 - 2.44ms
+2026-01-30 20:30:31 - app.middleware.logging_middleware - INFO - Request started: GET /api/books/ - ID: fda0b361-ac84-4a10-b7d9-e849ded09aa7
+2026-01-30 20:30:31 - app.middleware.logging_middleware - INFO - Request started: GET /api/books/ - ID: fda0b361-ac84-4a10-b7d9-e849ded09aa7
+2026-01-30 20:30:31 - app.middleware.logging_middleware - ERROR - Request error: GET /api/books/ - (sqlite3.OperationalError) no such column: books.filename
+[SQL: SELECT books.id AS books_id, books.title AS books_title, books.author AS books_author, books.filename AS books_filename, books.file_path AS books_file_path, books.status AS books_status, books.content AS books_content, books.total_pages AS books_total_pages, books.current_page AS books_current_page, books.progress AS books_progress, books.owner_id AS books_owner_id 
+FROM books 
+WHERE books.owner_id = ?]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 3.83ms
+2026-01-30 20:30:31 - app.middleware.logging_middleware - ERROR - Request error: GET /api/books/ - (sqlite3.OperationalError) no such column: books.filename
+[SQL: SELECT books.id AS books_id, books.title AS books_title, books.author AS books_author, books.filename AS books_filename, books.file_path AS books_file_path, books.status AS books_status, books.content AS books_content, books.total_pages AS books_total_pages, books.current_page AS books_current_page, books.progress AS books_progress, books.owner_id AS books_owner_id 
+FROM books 
+WHERE books.owner_id = ?]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 3.83ms
+2026-01-30 20:30:32 - app.middleware.logging_middleware - INFO - Request started: GET /api/books/ - ID: fd6cc2eb-4345-4806-af61-5ff0c7e06914
+2026-01-30 20:30:32 - app.middleware.logging_middleware - INFO - Request started: GET /api/books/ - ID: fd6cc2eb-4345-4806-af61-5ff0c7e06914
+2026-01-30 20:30:32 - app.middleware.logging_middleware - ERROR - Request error: GET /api/books/ - (sqlite3.OperationalError) no such column: books.filename
+[SQL: SELECT books.id AS books_id, books.title AS books_title, books.author AS books_author, books.filename AS books_filename, books.file_path AS books_file_path, books.status AS books_status, books.content AS books_content, books.total_pages AS books_total_pages, books.current_page AS books_current_page, books.progress AS books_progress, books.owner_id AS books_owner_id 
+FROM books 
+WHERE books.owner_id = ?]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 2.50ms
+2026-01-30 20:30:32 - app.middleware.logging_middleware - ERROR - Request error: GET /api/books/ - (sqlite3.OperationalError) no such column: books.filename
+[SQL: SELECT books.id AS books_id, books.title AS books_title, books.author AS books_author, books.filename AS books_filename, books.file_path AS books_file_path, books.status AS books_status, books.content AS books_content, books.total_pages AS books_total_pages, books.current_page AS books_current_page, books.progress AS books_progress, books.owner_id AS books_owner_id 
+FROM books 
+WHERE books.owner_id = ?]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 2.50ms
+2026-01-30 20:30:40 - app.middleware.logging_middleware - INFO - Request started: GET /api/books/ - ID: 07382068-f446-42d7-b675-22c3c5975983
+2026-01-30 20:30:40 - app.middleware.logging_middleware - INFO - Request started: GET /api/books/ - ID: 07382068-f446-42d7-b675-22c3c5975983
+2026-01-30 20:30:40 - app.middleware.logging_middleware - ERROR - Request error: GET /api/books/ - (sqlite3.OperationalError) no such column: books.filename
+[SQL: SELECT books.id AS books_id, books.title AS books_title, books.author AS books_author, books.filename AS books_filename, books.file_path AS books_file_path, books.status AS books_status, books.content AS books_content, books.total_pages AS books_total_pages, books.current_page AS books_current_page, books.progress AS books_progress, books.owner_id AS books_owner_id 
+FROM books 
+WHERE books.owner_id = ?]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 3.55ms
+2026-01-30 20:30:40 - app.middleware.logging_middleware - ERROR - Request error: GET /api/books/ - (sqlite3.OperationalError) no such column: books.filename
+[SQL: SELECT books.id AS books_id, books.title AS books_title, books.author AS books_author, books.filename AS books_filename, books.file_path AS books_file_path, books.status AS books_status, books.content AS books_content, books.total_pages AS books_total_pages, books.current_page AS books_current_page, books.progress AS books_progress, books.owner_id AS books_owner_id 
+FROM books 
+WHERE books.owner_id = ?]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 3.55ms
+2026-01-30 20:30:41 - app.middleware.logging_middleware - INFO - Request started: GET /api/books/ - ID: c8e6833c-1333-4101-b9da-2ec5356917c3
+2026-01-30 20:30:41 - app.middleware.logging_middleware - INFO - Request started: GET /api/books/ - ID: c8e6833c-1333-4101-b9da-2ec5356917c3
+2026-01-30 20:30:41 - app.middleware.logging_middleware - ERROR - Request error: GET /api/books/ - (sqlite3.OperationalError) no such column: books.filename
+[SQL: SELECT books.id AS books_id, books.title AS books_title, books.author AS books_author, books.filename AS books_filename, books.file_path AS books_file_path, books.status AS books_status, books.content AS books_content, books.total_pages AS books_total_pages, books.current_page AS books_current_page, books.progress AS books_progress, books.owner_id AS books_owner_id 
+FROM books 
+WHERE books.owner_id = ?]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 2.34ms
+2026-01-30 20:30:41 - app.middleware.logging_middleware - ERROR - Request error: GET /api/books/ - (sqlite3.OperationalError) no such column: books.filename
+[SQL: SELECT books.id AS books_id, books.title AS books_title, books.author AS books_author, books.filename AS books_filename, books.file_path AS books_file_path, books.status AS books_status, books.content AS books_content, books.total_pages AS books_total_pages, books.current_page AS books_current_page, books.progress AS books_progress, books.owner_id AS books_owner_id 
+FROM books 
+WHERE books.owner_id = ?]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 2.34ms
+2026-01-30 20:30:49 - app.middleware.logging_middleware - INFO - Request started: POST /api/books/upload - ID: 937e4c8c-9386-43bf-9100-8110e9de3e72
+2026-01-30 20:30:49 - app.middleware.logging_middleware - INFO - Request started: POST /api/books/upload - ID: 937e4c8c-9386-43bf-9100-8110e9de3e72
+2026-01-30 20:30:49 - app.middleware.logging_middleware - ERROR - Request error: POST /api/books/upload - (sqlite3.OperationalError) table books has no column named filename
+[SQL: INSERT INTO books (title, author, filename, file_path, status, content, total_pages, current_page, progress, owner_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('Fahrenheit 451 - Ray Bradbury', None, '4f953afa-be3b-4781-81c8-bd7dcc70da52_Fahrenheit 451 - Ray Bradbury.pdf', 'storage/pdfs/4f953afa-be3b-4781-81c8-bd7dcc70da52_Fahrenheit 451 - Ray Bradbury.pdf', 'processing', None, 0, 0, 0.0, 3)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 27.29ms
+2026-01-30 20:30:49 - app.middleware.logging_middleware - ERROR - Request error: POST /api/books/upload - (sqlite3.OperationalError) table books has no column named filename
+[SQL: INSERT INTO books (title, author, filename, file_path, status, content, total_pages, current_page, progress, owner_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('Fahrenheit 451 - Ray Bradbury', None, '4f953afa-be3b-4781-81c8-bd7dcc70da52_Fahrenheit 451 - Ray Bradbury.pdf', 'storage/pdfs/4f953afa-be3b-4781-81c8-bd7dcc70da52_Fahrenheit 451 - Ray Bradbury.pdf', 'processing', None, 0, 0, 0.0, 3)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 27.29ms
+2026-01-30 20:31:15 - app.core.logging - INFO - Logging system initialized
+2026-01-30 20:33:00 - app.core.logging - INFO - Logging system initialized
+2026-01-30 20:33:09 - app.middleware.logging_middleware - INFO - Request started: GET /docs - ID: fd811f62-ad97-48b0-8e40-67ddf619bcc1
+2026-01-30 20:33:09 - app.middleware.logging_middleware - INFO - Request started: GET /docs - ID: fd811f62-ad97-48b0-8e40-67ddf619bcc1
+2026-01-30 20:33:09 - app.middleware.logging_middleware - INFO - Request completed: GET /docs - 200 - 0.39ms
+2026-01-30 20:33:09 - app.middleware.logging_middleware - INFO - Request completed: GET /docs - 200 - 0.39ms
+2026-01-30 20:33:10 - app.middleware.logging_middleware - INFO - Request started: GET /openapi.json - ID: 2a373bf1-46e8-41e6-a22b-3abba260ad5b
+2026-01-30 20:33:10 - app.middleware.logging_middleware - INFO - Request started: GET /openapi.json - ID: 2a373bf1-46e8-41e6-a22b-3abba260ad5b
+2026-01-30 20:33:10 - app.middleware.logging_middleware - INFO - Request completed: GET /openapi.json - 200 - 26.58ms
+2026-01-30 20:33:10 - app.middleware.logging_middleware - INFO - Request completed: GET /openapi.json - 200 - 26.58ms
+2026-01-30 20:33:11 - app.middleware.logging_middleware - INFO - Request started: GET / - ID: d2aa4f1f-88fb-403c-b720-47ef961d494d
+2026-01-30 20:33:11 - app.middleware.logging_middleware - INFO - Request started: GET / - ID: d2aa4f1f-88fb-403c-b720-47ef961d494d
+2026-01-30 20:33:11 - app.middleware.logging_middleware - INFO - Request completed: GET / - 200 - 0.91ms
+2026-01-30 20:33:11 - app.middleware.logging_middleware - INFO - Request completed: GET / - 200 - 0.91ms
+2026-01-30 20:33:13 - app.middleware.logging_middleware - INFO - Request started: GET / - ID: 4d3049a6-12c7-425d-8fc8-e7a152af1362
+2026-01-30 20:33:13 - app.middleware.logging_middleware - INFO - Request started: GET / - ID: 4d3049a6-12c7-425d-8fc8-e7a152af1362
+2026-01-30 20:33:13 - app.middleware.logging_middleware - INFO - Request completed: GET / - 200 - 0.58ms
+2026-01-30 20:33:13 - app.middleware.logging_middleware - INFO - Request completed: GET / - 200 - 0.58ms
+2026-01-30 21:13:04 - app.middleware.logging_middleware - INFO - Request started: GET / - ID: 9ccb8e6c-f86f-4eb1-8ac0-5745918a1222
+2026-01-30 21:13:04 - app.middleware.logging_middleware - INFO - Request started: GET / - ID: 9ccb8e6c-f86f-4eb1-8ac0-5745918a1222
+2026-01-30 21:13:04 - app.middleware.logging_middleware - INFO - Request completed: GET / - 200 - 0.64ms
+2026-01-30 21:13:04 - app.middleware.logging_middleware - INFO - Request completed: GET / - 200 - 0.64ms
+2026-01-30 21:13:08 - app.middleware.logging_middleware - INFO - Request started: GET /docs - ID: 3cb61a69-2fac-415e-8907-f87c17dd86aa
+2026-01-30 21:13:08 - app.middleware.logging_middleware - INFO - Request started: GET /docs - ID: 3cb61a69-2fac-415e-8907-f87c17dd86aa
+2026-01-30 21:13:08 - app.middleware.logging_middleware - INFO - Request completed: GET /docs - 200 - 0.29ms
+2026-01-30 21:13:08 - app.middleware.logging_middleware - INFO - Request completed: GET /docs - 200 - 0.29ms
+2026-01-30 21:13:08 - app.middleware.logging_middleware - INFO - Request started: GET /openapi.json - ID: 08476177-ead5-4db3-827d-8001b4e30e1d
+2026-01-30 21:13:08 - app.middleware.logging_middleware - INFO - Request started: GET /openapi.json - ID: 08476177-ead5-4db3-827d-8001b4e30e1d
+2026-01-30 21:13:08 - app.middleware.logging_middleware - INFO - Request completed: GET /openapi.json - 200 - 0.62ms
+2026-01-30 21:13:08 - app.middleware.logging_middleware - INFO - Request completed: GET /openapi.json - 200 - 0.62ms
+2026-01-30 21:23:50 - app.core.logging - INFO - Logging system initialized
+2026-01-30 21:24:05 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 902a6897-ab49-4519-9346-6c2029812b42
+2026-01-30 21:24:05 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 902a6897-ab49-4519-9346-6c2029812b42
+2026-01-30 21:24:05 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 200 - 311.52ms
+2026-01-30 21:24:05 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 200 - 311.52ms
+2026-01-30 21:24:20 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: 0fa773fb-eff0-40c8-af93-eee91327b3bb
+2026-01-30 21:24:20 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: 0fa773fb-eff0-40c8-af93-eee91327b3bb
+2026-01-30 21:24:20 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/login - 200 - 263.15ms
+2026-01-30 21:24:20 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/login - 200 - 263.15ms
+2026-01-30 21:24:20 - app.middleware.logging_middleware - INFO - Request started: GET /api/auth/me - ID: d5a253cc-6b47-4ed5-8495-f8ab9b15d66c
+2026-01-30 21:24:20 - app.middleware.logging_middleware - INFO - Request started: GET /api/auth/me - ID: d5a253cc-6b47-4ed5-8495-f8ab9b15d66c
+2026-01-30 21:24:20 - app.middleware.logging_middleware - INFO - Request completed: GET /api/auth/me - 200 - 2.22ms
+2026-01-30 21:24:20 - app.middleware.logging_middleware - INFO - Request completed: GET /api/auth/me - 200 - 2.22ms
+2026-01-30 21:24:21 - app.middleware.logging_middleware - INFO - Request started: GET /api/books/ - ID: 639993a7-fb6e-48c8-9149-1c2c8002aad6
+2026-01-30 21:24:21 - app.middleware.logging_middleware - INFO - Request started: GET /api/books/ - ID: 639993a7-fb6e-48c8-9149-1c2c8002aad6
+2026-01-30 21:24:21 - app.middleware.logging_middleware - ERROR - Request error: GET /api/books/ - (sqlite3.OperationalError) no such column: books.filename
+[SQL: SELECT books.id AS books_id, books.title AS books_title, books.author AS books_author, books.filename AS books_filename, books.file_path AS books_file_path, books.status AS books_status, books.content AS books_content, books.total_pages AS books_total_pages, books.current_page AS books_current_page, books.progress AS books_progress, books.owner_id AS books_owner_id 
+FROM books 
+WHERE books.owner_id = ?]
+[parameters: (5,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 6.23ms
+2026-01-30 21:24:21 - app.middleware.logging_middleware - ERROR - Request error: GET /api/books/ - (sqlite3.OperationalError) no such column: books.filename
+[SQL: SELECT books.id AS books_id, books.title AS books_title, books.author AS books_author, books.filename AS books_filename, books.file_path AS books_file_path, books.status AS books_status, books.content AS books_content, books.total_pages AS books_total_pages, books.current_page AS books_current_page, books.progress AS books_progress, books.owner_id AS books_owner_id 
+FROM books 
+WHERE books.owner_id = ?]
+[parameters: (5,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 6.23ms
+2026-01-30 21:24:22 - app.middleware.logging_middleware - INFO - Request started: GET /api/books/ - ID: 48d5dee1-d707-4519-bd0a-72b00198d997
+2026-01-30 21:24:22 - app.middleware.logging_middleware - INFO - Request started: GET /api/books/ - ID: 48d5dee1-d707-4519-bd0a-72b00198d997
+2026-01-30 21:24:22 - app.middleware.logging_middleware - ERROR - Request error: GET /api/books/ - (sqlite3.OperationalError) no such column: books.filename
+[SQL: SELECT books.id AS books_id, books.title AS books_title, books.author AS books_author, books.filename AS books_filename, books.file_path AS books_file_path, books.status AS books_status, books.content AS books_content, books.total_pages AS books_total_pages, books.current_page AS books_current_page, books.progress AS books_progress, books.owner_id AS books_owner_id 
+FROM books 
+WHERE books.owner_id = ?]
+[parameters: (5,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 2.41ms
+2026-01-30 21:24:22 - app.middleware.logging_middleware - ERROR - Request error: GET /api/books/ - (sqlite3.OperationalError) no such column: books.filename
+[SQL: SELECT books.id AS books_id, books.title AS books_title, books.author AS books_author, books.filename AS books_filename, books.file_path AS books_file_path, books.status AS books_status, books.content AS books_content, books.total_pages AS books_total_pages, books.current_page AS books_current_page, books.progress AS books_progress, books.owner_id AS books_owner_id 
+FROM books 
+WHERE books.owner_id = ?]
+[parameters: (5,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 2.41ms
+2026-01-30 21:24:28 - app.middleware.logging_middleware - INFO - Request started: GET /api/books/ - ID: c7a37606-9e48-468a-9352-91bbba52670e
+2026-01-30 21:24:28 - app.middleware.logging_middleware - INFO - Request started: GET /api/books/ - ID: c7a37606-9e48-468a-9352-91bbba52670e
+2026-01-30 21:24:28 - app.middleware.logging_middleware - ERROR - Request error: GET /api/books/ - (sqlite3.OperationalError) no such column: books.filename
+[SQL: SELECT books.id AS books_id, books.title AS books_title, books.author AS books_author, books.filename AS books_filename, books.file_path AS books_file_path, books.status AS books_status, books.content AS books_content, books.total_pages AS books_total_pages, books.current_page AS books_current_page, books.progress AS books_progress, books.owner_id AS books_owner_id 
+FROM books 
+WHERE books.owner_id = ?]
+[parameters: (5,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 2.44ms
+2026-01-30 21:24:28 - app.middleware.logging_middleware - ERROR - Request error: GET /api/books/ - (sqlite3.OperationalError) no such column: books.filename
+[SQL: SELECT books.id AS books_id, books.title AS books_title, books.author AS books_author, books.filename AS books_filename, books.file_path AS books_file_path, books.status AS books_status, books.content AS books_content, books.total_pages AS books_total_pages, books.current_page AS books_current_page, books.progress AS books_progress, books.owner_id AS books_owner_id 
+FROM books 
+WHERE books.owner_id = ?]
+[parameters: (5,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 2.44ms
+2026-01-30 21:24:29 - app.middleware.logging_middleware - INFO - Request started: GET /api/books/ - ID: b0c1c75c-2165-4560-8d2c-97c48276c9a2
+2026-01-30 21:24:29 - app.middleware.logging_middleware - INFO - Request started: GET /api/books/ - ID: b0c1c75c-2165-4560-8d2c-97c48276c9a2
+2026-01-30 21:24:29 - app.middleware.logging_middleware - ERROR - Request error: GET /api/books/ - (sqlite3.OperationalError) no such column: books.filename
+[SQL: SELECT books.id AS books_id, books.title AS books_title, books.author AS books_author, books.filename AS books_filename, books.file_path AS books_file_path, books.status AS books_status, books.content AS books_content, books.total_pages AS books_total_pages, books.current_page AS books_current_page, books.progress AS books_progress, books.owner_id AS books_owner_id 
+FROM books 
+WHERE books.owner_id = ?]
+[parameters: (5,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 2.51ms
+2026-01-30 21:24:29 - app.middleware.logging_middleware - ERROR - Request error: GET /api/books/ - (sqlite3.OperationalError) no such column: books.filename
+[SQL: SELECT books.id AS books_id, books.title AS books_title, books.author AS books_author, books.filename AS books_filename, books.file_path AS books_file_path, books.status AS books_status, books.content AS books_content, books.total_pages AS books_total_pages, books.current_page AS books_current_page, books.progress AS books_progress, books.owner_id AS books_owner_id 
+FROM books 
+WHERE books.owner_id = ?]
+[parameters: (5,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 2.51ms
+2026-01-30 21:24:30 - app.middleware.logging_middleware - INFO - Request started: GET /api/books/ - ID: 7e1949ce-ab6a-45d8-8af2-6b9f87f504ed
+2026-01-30 21:24:30 - app.middleware.logging_middleware - INFO - Request started: GET /api/books/ - ID: 7e1949ce-ab6a-45d8-8af2-6b9f87f504ed
+2026-01-30 21:24:30 - app.middleware.logging_middleware - ERROR - Request error: GET /api/books/ - (sqlite3.OperationalError) no such column: books.filename
+[SQL: SELECT books.id AS books_id, books.title AS books_title, books.author AS books_author, books.filename AS books_filename, books.file_path AS books_file_path, books.status AS books_status, books.content AS books_content, books.total_pages AS books_total_pages, books.current_page AS books_current_page, books.progress AS books_progress, books.owner_id AS books_owner_id 
+FROM books 
+WHERE books.owner_id = ?]
+[parameters: (5,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 2.35ms
+2026-01-30 21:24:30 - app.middleware.logging_middleware - ERROR - Request error: GET /api/books/ - (sqlite3.OperationalError) no such column: books.filename
+[SQL: SELECT books.id AS books_id, books.title AS books_title, books.author AS books_author, books.filename AS books_filename, books.file_path AS books_file_path, books.status AS books_status, books.content AS books_content, books.total_pages AS books_total_pages, books.current_page AS books_current_page, books.progress AS books_progress, books.owner_id AS books_owner_id 
+FROM books 
+WHERE books.owner_id = ?]
+[parameters: (5,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 2.35ms
+2026-01-30 21:24:32 - app.middleware.logging_middleware - INFO - Request started: GET /api/books/ - ID: 456c02df-1201-43ee-9920-1da314dcb004
+2026-01-30 21:24:32 - app.middleware.logging_middleware - INFO - Request started: GET /api/books/ - ID: 456c02df-1201-43ee-9920-1da314dcb004
+2026-01-30 21:24:32 - app.middleware.logging_middleware - ERROR - Request error: GET /api/books/ - (sqlite3.OperationalError) no such column: books.filename
+[SQL: SELECT books.id AS books_id, books.title AS books_title, books.author AS books_author, books.filename AS books_filename, books.file_path AS books_file_path, books.status AS books_status, books.content AS books_content, books.total_pages AS books_total_pages, books.current_page AS books_current_page, books.progress AS books_progress, books.owner_id AS books_owner_id 
+FROM books 
+WHERE books.owner_id = ?]
+[parameters: (5,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 2.66ms
+2026-01-30 21:24:32 - app.middleware.logging_middleware - ERROR - Request error: GET /api/books/ - (sqlite3.OperationalError) no such column: books.filename
+[SQL: SELECT books.id AS books_id, books.title AS books_title, books.author AS books_author, books.filename AS books_filename, books.file_path AS books_file_path, books.status AS books_status, books.content AS books_content, books.total_pages AS books_total_pages, books.current_page AS books_current_page, books.progress AS books_progress, books.owner_id AS books_owner_id 
+FROM books 
+WHERE books.owner_id = ?]
+[parameters: (5,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 2.66ms

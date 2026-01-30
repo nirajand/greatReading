@@ -25,7 +25,8 @@ def register(user_in: UserCreate, db: Session = Depends(get_db)):
     new_user = UserModel(
         email=user_in.email,
         username=user_in.username,
-        hashed_password=get_password_hash(user_in.password)
+        hashed_password=get_password_hash(user_in.password),
+        is_active=True
     )
     db.add(new_user)
     db.commit()

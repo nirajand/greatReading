@@ -24,6 +24,10 @@ cleanup() {
 
 trap cleanup SIGINT SIGTERM
 
+
+cd frontend && npm install
+
+
 # Start Backend
 echo -e "\n${YELLOW}📦 Starting Backend...${NC}"
 cd /workspaces/greatReading/backend

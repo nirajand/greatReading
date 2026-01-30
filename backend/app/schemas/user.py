@@ -5,6 +5,7 @@ from datetime import datetime
 class UserBase(BaseModel):
     email: EmailStr
     username: str
+    is_active: Optional[bool] = True
 
 class UserCreate(UserBase):
     password: str
@@ -12,8 +13,8 @@ class UserCreate(UserBase):
 class UserInDB(UserBase):
     id: int
     is_active: bool
-    created_at: datetime
-    updated_at: datetime
+    created_at: Optional[datetime] = None
+    updated_at: Optional[datetime] = None
     
     # Updated for Pydantic v2
     model_config = ConfigDict(from_attributes=True)

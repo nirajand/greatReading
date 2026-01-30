@@ -1,4 +1,5 @@
-from sqlalchemy import Column, Integer, String, Boolean
+from sqlalchemy import Column, Integer, String, Boolean, DateTime
+from sqlalchemy.sql import func
 from sqlalchemy.orm import relationship
 from app.core.database import Base
 
@@ -9,7 +10,10 @@ class User(Base):
     username = Column(String, unique=True, index=True, nullable=False)
     hashed_password = Column(String, nullable=False)
     is_active = Column(Boolean, default=True)
+    created_at = Column(DateTime(timezone=True), server_default=func.now())
+    updated_at = Column(DateTime(timezone=True), onupdate=func.now(), server_default=func.now())
 
+    # Ensure these names match EXACTLY what is in your other model files
     books = relationship("Book", back_populates="owner", cascade="all, delete-orphan")
-    dictionary_entries = relationship("DictionaryEntry", back_populates="user")
-    reading_sessions = relationship("ReadingSession", back_populates="user")
+    dictionary_entries = relationship("DictionaryEntry", back_populates="user", cascade="all, delete-orphan")
+    reading_sessions = relationship("ReadingSession", back_populates="user", cascade="all, delete-orphan")

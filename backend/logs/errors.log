@@ -26,3 +26,181 @@
   {'type': 'missing', 'loc': ('response', 'created_at'), 'msg': 'Field required', 'input': <app.models.user.User object at 0x78ac42956c60>, 'url': 'https://errors.pydantic.dev/2.5/v/missing'}
   {'type': 'missing', 'loc': ('response', 'updated_at'), 'msg': 'Field required', 'input': <app.models.user.User object at 0x78ac42956c60>, 'url': 'https://errors.pydantic.dev/2.5/v/missing'}
  - 323.41ms
+2026-01-30 19:25:48 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/login - Mapper 'Mapper[User(users)]' has no property 'dictionary_entries'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called. - 8.79ms
+2026-01-30 19:25:48 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/login - Mapper 'Mapper[User(users)]' has no property 'dictionary_entries'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called. - 8.79ms
+2026-01-30 19:25:49 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/login - One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[DictionaryEntry(dictionary_entries)]'. Original exception was: Mapper 'Mapper[User(users)]' has no property 'dictionary_entries'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called. - 1.53ms
+2026-01-30 19:25:49 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/login - One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[DictionaryEntry(dictionary_entries)]'. Original exception was: Mapper 'Mapper[User(users)]' has no property 'dictionary_entries'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called. - 1.53ms
+2026-01-30 19:33:27 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/login - Mapper 'Mapper[User(users)]' has no property 'reading_sessions'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called. - 9.74ms
+2026-01-30 19:33:27 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/login - Mapper 'Mapper[User(users)]' has no property 'reading_sessions'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called. - 9.74ms
+2026-01-30 19:33:50 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/login - One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[ReadingSession(reading_sessions)]'. Original exception was: Mapper 'Mapper[User(users)]' has no property 'reading_sessions'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called. - 1.94ms
+2026-01-30 19:33:50 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/login - One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[ReadingSession(reading_sessions)]'. Original exception was: Mapper 'Mapper[User(users)]' has no property 'reading_sessions'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called. - 1.94ms
+2026-01-30 19:38:24 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/login - Mapper 'Mapper[User(users)]' has no property 'reading_sessions'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called. - 10.79ms
+2026-01-30 19:38:24 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/login - Mapper 'Mapper[User(users)]' has no property 'reading_sessions'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called. - 10.79ms
+2026-01-30 19:40:23 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/login - Mapper 'Mapper[User(users)]' has no property 'reading_sessions'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called. - 11.68ms
+2026-01-30 19:40:23 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/login - Mapper 'Mapper[User(users)]' has no property 'reading_sessions'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called. - 11.68ms
+2026-01-30 19:41:48 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/login - Mapper 'Mapper[User(users)]' has no property 'reading_sessions'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called. - 10.64ms
+2026-01-30 19:41:48 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/login - Mapper 'Mapper[User(users)]' has no property 'reading_sessions'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called. - 10.64ms
+2026-01-30 19:41:58 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/login - One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[ReadingSession(reading_sessions)]'. Original exception was: Mapper 'Mapper[User(users)]' has no property 'reading_sessions'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called. - 2.14ms
+2026-01-30 19:41:58 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/login - One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[ReadingSession(reading_sessions)]'. Original exception was: Mapper 'Mapper[User(users)]' has no property 'reading_sessions'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called. - 2.14ms
+2026-01-30 19:43:59 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/login - One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[ReadingSession(reading_sessions)]'. Original exception was: Mapper 'Mapper[User(users)]' has no property 'reading_sessions'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called. - 1.53ms
+2026-01-30 19:43:59 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/login - One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[ReadingSession(reading_sessions)]'. Original exception was: Mapper 'Mapper[User(users)]' has no property 'reading_sessions'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called. - 1.53ms
+2026-01-30 19:53:45 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/register - 2 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None, 'url': 'https://errors.pydantic.dev/2.5/v/datetime_type'}
+  {'type': 'datetime_type', 'loc': ('response', 'updated_at'), 'msg': 'Input should be a valid datetime', 'input': None, 'url': 'https://errors.pydantic.dev/2.5/v/datetime_type'}
+ - 278.65ms
+2026-01-30 19:53:45 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/register - 2 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None, 'url': 'https://errors.pydantic.dev/2.5/v/datetime_type'}
+  {'type': 'datetime_type', 'loc': ('response', 'updated_at'), 'msg': 'Input should be a valid datetime', 'input': None, 'url': 'https://errors.pydantic.dev/2.5/v/datetime_type'}
+ - 278.65ms
+2026-01-30 19:53:52 - app.middleware.logging_middleware - ERROR - Request error: GET /api/auth/me - 2 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None, 'url': 'https://errors.pydantic.dev/2.5/v/datetime_type'}
+  {'type': 'datetime_type', 'loc': ('response', 'updated_at'), 'msg': 'Input should be a valid datetime', 'input': None, 'url': 'https://errors.pydantic.dev/2.5/v/datetime_type'}
+ - 2.66ms
+2026-01-30 19:53:52 - app.middleware.logging_middleware - ERROR - Request error: GET /api/auth/me - 2 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None, 'url': 'https://errors.pydantic.dev/2.5/v/datetime_type'}
+  {'type': 'datetime_type', 'loc': ('response', 'updated_at'), 'msg': 'Input should be a valid datetime', 'input': None, 'url': 'https://errors.pydantic.dev/2.5/v/datetime_type'}
+ - 2.66ms
+2026-01-30 19:55:29 - app.middleware.logging_middleware - ERROR - Request error: GET /api/auth/me - 2 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None, 'url': 'https://errors.pydantic.dev/2.5/v/datetime_type'}
+  {'type': 'datetime_type', 'loc': ('response', 'updated_at'), 'msg': 'Input should be a valid datetime', 'input': None, 'url': 'https://errors.pydantic.dev/2.5/v/datetime_type'}
+ - 2.12ms
+2026-01-30 19:55:29 - app.middleware.logging_middleware - ERROR - Request error: GET /api/auth/me - 2 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None, 'url': 'https://errors.pydantic.dev/2.5/v/datetime_type'}
+  {'type': 'datetime_type', 'loc': ('response', 'updated_at'), 'msg': 'Input should be a valid datetime', 'input': None, 'url': 'https://errors.pydantic.dev/2.5/v/datetime_type'}
+ - 2.12ms
+2026-01-30 19:55:31 - app.middleware.logging_middleware - ERROR - Request error: GET /api/auth/me - 2 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None, 'url': 'https://errors.pydantic.dev/2.5/v/datetime_type'}
+  {'type': 'datetime_type', 'loc': ('response', 'updated_at'), 'msg': 'Input should be a valid datetime', 'input': None, 'url': 'https://errors.pydantic.dev/2.5/v/datetime_type'}
+ - 2.30ms
+2026-01-30 19:55:31 - app.middleware.logging_middleware - ERROR - Request error: GET /api/auth/me - 2 validation errors:
+  {'type': 'datetime_type', 'loc': ('response', 'created_at'), 'msg': 'Input should be a valid datetime', 'input': None, 'url': 'https://errors.pydantic.dev/2.5/v/datetime_type'}
+  {'type': 'datetime_type', 'loc': ('response', 'updated_at'), 'msg': 'Input should be a valid datetime', 'input': None, 'url': 'https://errors.pydantic.dev/2.5/v/datetime_type'}
+ - 2.30ms
+2026-01-30 20:30:31 - app.middleware.logging_middleware - ERROR - Request error: GET /api/books/ - (sqlite3.OperationalError) no such column: books.filename
+[SQL: SELECT books.id AS books_id, books.title AS books_title, books.author AS books_author, books.filename AS books_filename, books.file_path AS books_file_path, books.status AS books_status, books.content AS books_content, books.total_pages AS books_total_pages, books.current_page AS books_current_page, books.progress AS books_progress, books.owner_id AS books_owner_id 
+FROM books 
+WHERE books.owner_id = ?]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 3.83ms
+2026-01-30 20:30:31 - app.middleware.logging_middleware - ERROR - Request error: GET /api/books/ - (sqlite3.OperationalError) no such column: books.filename
+[SQL: SELECT books.id AS books_id, books.title AS books_title, books.author AS books_author, books.filename AS books_filename, books.file_path AS books_file_path, books.status AS books_status, books.content AS books_content, books.total_pages AS books_total_pages, books.current_page AS books_current_page, books.progress AS books_progress, books.owner_id AS books_owner_id 
+FROM books 
+WHERE books.owner_id = ?]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 3.83ms
+2026-01-30 20:30:32 - app.middleware.logging_middleware - ERROR - Request error: GET /api/books/ - (sqlite3.OperationalError) no such column: books.filename
+[SQL: SELECT books.id AS books_id, books.title AS books_title, books.author AS books_author, books.filename AS books_filename, books.file_path AS books_file_path, books.status AS books_status, books.content AS books_content, books.total_pages AS books_total_pages, books.current_page AS books_current_page, books.progress AS books_progress, books.owner_id AS books_owner_id 
+FROM books 
+WHERE books.owner_id = ?]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 2.50ms
+2026-01-30 20:30:32 - app.middleware.logging_middleware - ERROR - Request error: GET /api/books/ - (sqlite3.OperationalError) no such column: books.filename
+[SQL: SELECT books.id AS books_id, books.title AS books_title, books.author AS books_author, books.filename AS books_filename, books.file_path AS books_file_path, books.status AS books_status, books.content AS books_content, books.total_pages AS books_total_pages, books.current_page AS books_current_page, books.progress AS books_progress, books.owner_id AS books_owner_id 
+FROM books 
+WHERE books.owner_id = ?]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 2.50ms
+2026-01-30 20:30:40 - app.middleware.logging_middleware - ERROR - Request error: GET /api/books/ - (sqlite3.OperationalError) no such column: books.filename
+[SQL: SELECT books.id AS books_id, books.title AS books_title, books.author AS books_author, books.filename AS books_filename, books.file_path AS books_file_path, books.status AS books_status, books.content AS books_content, books.total_pages AS books_total_pages, books.current_page AS books_current_page, books.progress AS books_progress, books.owner_id AS books_owner_id 
+FROM books 
+WHERE books.owner_id = ?]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 3.55ms
+2026-01-30 20:30:40 - app.middleware.logging_middleware - ERROR - Request error: GET /api/books/ - (sqlite3.OperationalError) no such column: books.filename
+[SQL: SELECT books.id AS books_id, books.title AS books_title, books.author AS books_author, books.filename AS books_filename, books.file_path AS books_file_path, books.status AS books_status, books.content AS books_content, books.total_pages AS books_total_pages, books.current_page AS books_current_page, books.progress AS books_progress, books.owner_id AS books_owner_id 
+FROM books 
+WHERE books.owner_id = ?]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 3.55ms
+2026-01-30 20:30:41 - app.middleware.logging_middleware - ERROR - Request error: GET /api/books/ - (sqlite3.OperationalError) no such column: books.filename
+[SQL: SELECT books.id AS books_id, books.title AS books_title, books.author AS books_author, books.filename AS books_filename, books.file_path AS books_file_path, books.status AS books_status, books.content AS books_content, books.total_pages AS books_total_pages, books.current_page AS books_current_page, books.progress AS books_progress, books.owner_id AS books_owner_id 
+FROM books 
+WHERE books.owner_id = ?]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 2.34ms
+2026-01-30 20:30:41 - app.middleware.logging_middleware - ERROR - Request error: GET /api/books/ - (sqlite3.OperationalError) no such column: books.filename
+[SQL: SELECT books.id AS books_id, books.title AS books_title, books.author AS books_author, books.filename AS books_filename, books.file_path AS books_file_path, books.status AS books_status, books.content AS books_content, books.total_pages AS books_total_pages, books.current_page AS books_current_page, books.progress AS books_progress, books.owner_id AS books_owner_id 
+FROM books 
+WHERE books.owner_id = ?]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 2.34ms
+2026-01-30 20:30:49 - app.middleware.logging_middleware - ERROR - Request error: POST /api/books/upload - (sqlite3.OperationalError) table books has no column named filename
+[SQL: INSERT INTO books (title, author, filename, file_path, status, content, total_pages, current_page, progress, owner_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('Fahrenheit 451 - Ray Bradbury', None, '4f953afa-be3b-4781-81c8-bd7dcc70da52_Fahrenheit 451 - Ray Bradbury.pdf', 'storage/pdfs/4f953afa-be3b-4781-81c8-bd7dcc70da52_Fahrenheit 451 - Ray Bradbury.pdf', 'processing', None, 0, 0, 0.0, 3)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 27.29ms
+2026-01-30 20:30:49 - app.middleware.logging_middleware - ERROR - Request error: POST /api/books/upload - (sqlite3.OperationalError) table books has no column named filename
+[SQL: INSERT INTO books (title, author, filename, file_path, status, content, total_pages, current_page, progress, owner_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('Fahrenheit 451 - Ray Bradbury', None, '4f953afa-be3b-4781-81c8-bd7dcc70da52_Fahrenheit 451 - Ray Bradbury.pdf', 'storage/pdfs/4f953afa-be3b-4781-81c8-bd7dcc70da52_Fahrenheit 451 - Ray Bradbury.pdf', 'processing', None, 0, 0, 0.0, 3)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 27.29ms
+2026-01-30 21:24:21 - app.middleware.logging_middleware - ERROR - Request error: GET /api/books/ - (sqlite3.OperationalError) no such column: books.filename
+[SQL: SELECT books.id AS books_id, books.title AS books_title, books.author AS books_author, books.filename AS books_filename, books.file_path AS books_file_path, books.status AS books_status, books.content AS books_content, books.total_pages AS books_total_pages, books.current_page AS books_current_page, books.progress AS books_progress, books.owner_id AS books_owner_id 
+FROM books 
+WHERE books.owner_id = ?]
+[parameters: (5,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 6.23ms
+2026-01-30 21:24:21 - app.middleware.logging_middleware - ERROR - Request error: GET /api/books/ - (sqlite3.OperationalError) no such column: books.filename
+[SQL: SELECT books.id AS books_id, books.title AS books_title, books.author AS books_author, books.filename AS books_filename, books.file_path AS books_file_path, books.status AS books_status, books.content AS books_content, books.total_pages AS books_total_pages, books.current_page AS books_current_page, books.progress AS books_progress, books.owner_id AS books_owner_id 
+FROM books 
+WHERE books.owner_id = ?]
+[parameters: (5,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 6.23ms
+2026-01-30 21:24:22 - app.middleware.logging_middleware - ERROR - Request error: GET /api/books/ - (sqlite3.OperationalError) no such column: books.filename
+[SQL: SELECT books.id AS books_id, books.title AS books_title, books.author AS books_author, books.filename AS books_filename, books.file_path AS books_file_path, books.status AS books_status, books.content AS books_content, books.total_pages AS books_total_pages, books.current_page AS books_current_page, books.progress AS books_progress, books.owner_id AS books_owner_id 
+FROM books 
+WHERE books.owner_id = ?]
+[parameters: (5,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 2.41ms
+2026-01-30 21:24:22 - app.middleware.logging_middleware - ERROR - Request error: GET /api/books/ - (sqlite3.OperationalError) no such column: books.filename
+[SQL: SELECT books.id AS books_id, books.title AS books_title, books.author AS books_author, books.filename AS books_filename, books.file_path AS books_file_path, books.status AS books_status, books.content AS books_content, books.total_pages AS books_total_pages, books.current_page AS books_current_page, books.progress AS books_progress, books.owner_id AS books_owner_id 
+FROM books 
+WHERE books.owner_id = ?]
+[parameters: (5,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 2.41ms
+2026-01-30 21:24:28 - app.middleware.logging_middleware - ERROR - Request error: GET /api/books/ - (sqlite3.OperationalError) no such column: books.filename
+[SQL: SELECT books.id AS books_id, books.title AS books_title, books.author AS books_author, books.filename AS books_filename, books.file_path AS books_file_path, books.status AS books_status, books.content AS books_content, books.total_pages AS books_total_pages, books.current_page AS books_current_page, books.progress AS books_progress, books.owner_id AS books_owner_id 
+FROM books 
+WHERE books.owner_id = ?]
+[parameters: (5,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 2.44ms
+2026-01-30 21:24:28 - app.middleware.logging_middleware - ERROR - Request error: GET /api/books/ - (sqlite3.OperationalError) no such column: books.filename
+[SQL: SELECT books.id AS books_id, books.title AS books_title, books.author AS books_author, books.filename AS books_filename, books.file_path AS books_file_path, books.status AS books_status, books.content AS books_content, books.total_pages AS books_total_pages, books.current_page AS books_current_page, books.progress AS books_progress, books.owner_id AS books_owner_id 
+FROM books 
+WHERE books.owner_id = ?]
+[parameters: (5,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 2.44ms
+2026-01-30 21:24:29 - app.middleware.logging_middleware - ERROR - Request error: GET /api/books/ - (sqlite3.OperationalError) no such column: books.filename
+[SQL: SELECT books.id AS books_id, books.title AS books_title, books.author AS books_author, books.filename AS books_filename, books.file_path AS books_file_path, books.status AS books_status, books.content AS books_content, books.total_pages AS books_total_pages, books.current_page AS books_current_page, books.progress AS books_progress, books.owner_id AS books_owner_id 
+FROM books 
+WHERE books.owner_id = ?]
+[parameters: (5,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 2.51ms
+2026-01-30 21:24:29 - app.middleware.logging_middleware - ERROR - Request error: GET /api/books/ - (sqlite3.OperationalError) no such column: books.filename
+[SQL: SELECT books.id AS books_id, books.title AS books_title, books.author AS books_author, books.filename AS books_filename, books.file_path AS books_file_path, books.status AS books_status, books.content AS books_content, books.total_pages AS books_total_pages, books.current_page AS books_current_page, books.progress AS books_progress, books.owner_id AS books_owner_id 
+FROM books 
+WHERE books.owner_id = ?]
+[parameters: (5,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 2.51ms
+2026-01-30 21:24:30 - app.middleware.logging_middleware - ERROR - Request error: GET /api/books/ - (sqlite3.OperationalError) no such column: books.filename
+[SQL: SELECT books.id AS books_id, books.title AS books_title, books.author AS books_author, books.filename AS books_filename, books.file_path AS books_file_path, books.status AS books_status, books.content AS books_content, books.total_pages AS books_total_pages, books.current_page AS books_current_page, books.progress AS books_progress, books.owner_id AS books_owner_id 
+FROM books 
+WHERE books.owner_id = ?]
+[parameters: (5,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 2.35ms
+2026-01-30 21:24:30 - app.middleware.logging_middleware - ERROR - Request error: GET /api/books/ - (sqlite3.OperationalError) no such column: books.filename
+[SQL: SELECT books.id AS books_id, books.title AS books_title, books.author AS books_author, books.filename AS books_filename, books.file_path AS books_file_path, books.status AS books_status, books.content AS books_content, books.total_pages AS books_total_pages, books.current_page AS books_current_page, books.progress AS books_progress, books.owner_id AS books_owner_id 
+FROM books 
+WHERE books.owner_id = ?]
+[parameters: (5,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 2.35ms
+2026-01-30 21:24:32 - app.middleware.logging_middleware - ERROR - Request error: GET /api/books/ - (sqlite3.OperationalError) no such column: books.filename
+[SQL: SELECT books.id AS books_id, books.title AS books_title, books.author AS books_author, books.filename AS books_filename, books.file_path AS books_file_path, books.status AS books_status, books.content AS books_content, books.total_pages AS books_total_pages, books.current_page AS books_current_page, books.progress AS books_progress, books.owner_id AS books_owner_id 
+FROM books 
+WHERE books.owner_id = ?]
+[parameters: (5,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 2.66ms
+2026-01-30 21:24:32 - app.middleware.logging_middleware - ERROR - Request error: GET /api/books/ - (sqlite3.OperationalError) no such column: books.filename
+[SQL: SELECT books.id AS books_id, books.title AS books_title, books.author AS books_author, books.filename AS books_filename, books.file_path AS books_file_path, books.status AS books_status, books.content AS books_content, books.total_pages AS books_total_pages, books.current_page AS books_current_page, books.progress AS books_progress, books.owner_id AS books_owner_id 
+FROM books 
+WHERE books.owner_id = ?]
+[parameters: (5,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - 2.66ms

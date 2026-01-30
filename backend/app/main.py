@@ -20,6 +20,8 @@ app = FastAPI(
     redoc_url="/redoc"
 )
 
+origins = ["https://glowing-succotash-9qwjwwqqvr937xjw-5173.app.github.dev", "http://localhost:5173", "http://localhost:3000"]
+
 # Add middleware
 app.add_middleware(LoggingMiddleware)
 app.add_middleware(RateLimitingMiddleware, max_requests=100, window_seconds=60)
@@ -27,7 +29,7 @@ app.add_middleware(RateLimitingMiddleware, max_requests=100, window_seconds=60)
 # Configure CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Allow all origins for development
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
