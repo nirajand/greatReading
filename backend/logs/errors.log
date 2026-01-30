@@ -1,0 +1,10 @@
+2026-01-30 17:08:23 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/register - type object 'User' has no attribute 'username' - 79.49ms
+2026-01-30 17:08:23 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/register - type object 'User' has no attribute 'username' - 79.49ms
+2026-01-30 17:08:25 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/register - type object 'User' has no attribute 'username' - 2.06ms
+2026-01-30 17:08:25 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/register - type object 'User' has no attribute 'username' - 2.06ms
+2026-01-30 17:08:29 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/register - type object 'User' has no attribute 'username' - 1.46ms
+2026-01-30 17:08:29 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/register - type object 'User' has no attribute 'username' - 1.46ms
+2026-01-30 17:11:20 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/register - password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72]) - 21.09ms
+2026-01-30 17:11:20 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/register - password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72]) - 21.09ms
+2026-01-30 17:11:21 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/register - password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72]) - 10.64ms
+2026-01-30 17:11:21 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/register - password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72]) - 10.64ms

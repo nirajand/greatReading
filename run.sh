@@ -1,28 +1,18 @@
 #!/bin/bash
 
-# Start backend
-echo "Starting GreatReading Backend..."
+echo "🔧 Fixing Backend..."
 cd backend
-source venv/bin/activate
-python run.py &
-BACKEND_PID=$!
+pip install -r requirements.txt
+# Ensure uploads dir exists
+mkdir -p uploads
+# Run background check
+python3 test_setup.py
 
-# Start frontend
-echo "Starting GreatReading Frontend..."
+echo "🔧 Fixing Frontend..."
 cd ../frontend
-npm run dev &
-FRONTEND_PID=$!
-
-echo "Backend PID: $BACKEND_PID"
-echo "Frontend PID: $FRONTEND_PID"
-echo ""
-echo "GreatReading is running!"
-echo "Frontend: http://localhost:5173"
-echo "Backend API: http://localhost:8000"
-echo "API Docs: http://localhost:8000/docs"
-echo ""
-echo "Press Ctrl+C to stop both servers"
-
-# Wait for Ctrl+C
-trap "kill $BACKEND_PID $FRONTEND_PID" EXIT
-wait
+npm install
+# Start both in background (or use concurrent shells)
+echo "🚀 Starting Services..."
+cd ..
+# This runs both simultaneously
+(cd backend && uvicorn app.main:app --reload --host 0.0.0.0 --port 8000) & (cd frontend && npm run dev)

@@ -1,3 +1,74 @@
 2026-01-30 16:40:48 - app.core.logging - INFO - Logging system initialized
 2026-01-30 16:41:22 - app.core.logging - INFO - Logging system initialized
 2026-01-30 16:55:56 - app.core.logging - INFO - Logging system initialized
+2026-01-30 17:03:15 - app.core.logging - INFO - Logging system initialized
+2026-01-30 17:04:29 - app.core.logging - INFO - Logging system initialized
+2026-01-30 17:06:52 - app.core.logging - INFO - Logging system initialized
+2026-01-30 17:07:26 - app.core.logging - INFO - Logging system initialized
+2026-01-30 17:07:30 - app.core.logging - INFO - Logging system initialized
+2026-01-30 17:07:38 - app.core.logging - INFO - Logging system initialized
+2026-01-30 17:07:46 - app.middleware.logging_middleware - INFO - Request started: GET / - ID: 8af08981-32d2-42e1-bf96-11baff710c8d
+2026-01-30 17:07:46 - app.middleware.logging_middleware - INFO - Request started: GET / - ID: 8af08981-32d2-42e1-bf96-11baff710c8d
+2026-01-30 17:07:46 - app.middleware.logging_middleware - INFO - Request completed: GET / - 200 - 0.83ms
+2026-01-30 17:07:46 - app.middleware.logging_middleware - INFO - Request completed: GET / - 200 - 0.83ms
+2026-01-30 17:07:57 - app.middleware.logging_middleware - INFO - Request started: GET /docs - ID: 57b4f048-c07e-4f67-9682-d5f300e97fe1
+2026-01-30 17:07:57 - app.middleware.logging_middleware - INFO - Request started: GET /docs - ID: 57b4f048-c07e-4f67-9682-d5f300e97fe1
+2026-01-30 17:07:57 - app.middleware.logging_middleware - INFO - Request completed: GET /docs - 200 - 0.58ms
+2026-01-30 17:07:57 - app.middleware.logging_middleware - INFO - Request completed: GET /docs - 200 - 0.58ms
+2026-01-30 17:07:58 - app.middleware.logging_middleware - INFO - Request started: GET /openapi.json - ID: 634aee7d-6ace-44d8-8b46-fd1078883316
+2026-01-30 17:07:58 - app.middleware.logging_middleware - INFO - Request started: GET /openapi.json - ID: 634aee7d-6ace-44d8-8b46-fd1078883316
+2026-01-30 17:07:58 - app.middleware.logging_middleware - INFO - Request completed: GET /openapi.json - 200 - 19.45ms
+2026-01-30 17:07:58 - app.middleware.logging_middleware - INFO - Request completed: GET /openapi.json - 200 - 19.45ms
+2026-01-30 17:08:23 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 1ef336ac-c161-4ccb-9d04-f0379b1be0c4
+2026-01-30 17:08:23 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 1ef336ac-c161-4ccb-9d04-f0379b1be0c4
+2026-01-30 17:08:23 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/register - type object 'User' has no attribute 'username' - 79.49ms
+2026-01-30 17:08:23 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/register - type object 'User' has no attribute 'username' - 79.49ms
+2026-01-30 17:08:25 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: fa16ee3e-0472-49d5-97f4-ec5970028961
+2026-01-30 17:08:25 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: fa16ee3e-0472-49d5-97f4-ec5970028961
+2026-01-30 17:08:25 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/register - type object 'User' has no attribute 'username' - 2.06ms
+2026-01-30 17:08:25 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/register - type object 'User' has no attribute 'username' - 2.06ms
+2026-01-30 17:08:29 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: a94598bf-0825-4fcb-9dd3-fea868a90eaa
+2026-01-30 17:08:29 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: a94598bf-0825-4fcb-9dd3-fea868a90eaa
+2026-01-30 17:08:29 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/register - type object 'User' has no attribute 'username' - 1.46ms
+2026-01-30 17:08:29 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/register - type object 'User' has no attribute 'username' - 1.46ms
+2026-01-30 17:10:39 - app.core.logging - INFO - Logging system initialized
+2026-01-30 17:10:44 - app.middleware.logging_middleware - INFO - Request started: GET /docs - ID: 547ba01e-625f-4c3b-b182-c424866523e3
+2026-01-30 17:10:44 - app.middleware.logging_middleware - INFO - Request started: GET /docs - ID: 547ba01e-625f-4c3b-b182-c424866523e3
+2026-01-30 17:10:44 - app.middleware.logging_middleware - INFO - Request completed: GET /docs - 200 - 0.37ms
+2026-01-30 17:10:44 - app.middleware.logging_middleware - INFO - Request completed: GET /docs - 200 - 0.37ms
+2026-01-30 17:10:45 - app.middleware.logging_middleware - INFO - Request started: GET /openapi.json - ID: a57d3bc7-1f28-427f-8a0d-1990ab40282a
+2026-01-30 17:10:45 - app.middleware.logging_middleware - INFO - Request started: GET /openapi.json - ID: a57d3bc7-1f28-427f-8a0d-1990ab40282a
+2026-01-30 17:10:45 - app.middleware.logging_middleware - INFO - Request completed: GET /openapi.json - 200 - 19.94ms
+2026-01-30 17:10:45 - app.middleware.logging_middleware - INFO - Request completed: GET /openapi.json - 200 - 19.94ms
+2026-01-30 17:11:20 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 83c47119-7143-43a2-b083-55ff1d1d7c6d
+2026-01-30 17:11:20 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 83c47119-7143-43a2-b083-55ff1d1d7c6d
+2026-01-30 17:11:20 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/workspaces/greatReading/backend/venv/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-01-30 17:11:20 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/workspaces/greatReading/backend/venv/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-01-30 17:11:20 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/register - password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72]) - 21.09ms
+2026-01-30 17:11:20 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/register - password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72]) - 21.09ms
+2026-01-30 17:11:21 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 516f3eeb-1d61-4fa7-a912-5552ee9d930b
+2026-01-30 17:11:21 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 516f3eeb-1d61-4fa7-a912-5552ee9d930b
+2026-01-30 17:11:21 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/workspaces/greatReading/backend/venv/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-01-30 17:11:21 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/workspaces/greatReading/backend/venv/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-01-30 17:11:21 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/register - password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72]) - 10.64ms
+2026-01-30 17:11:21 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/register - password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72]) - 10.64ms

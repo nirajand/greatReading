@@ -1,15 +1,14 @@
-from sqlalchemy import Column, String, Integer, Float, ForeignKey
-from .base import BaseModel
+from sqlalchemy import Column, Integer, String, JSON, ForeignKey
+from sqlalchemy.orm import relationship
+from app.core.database import Base
 
-class Book(BaseModel):
+class Book(Base):
     __tablename__ = "books"
-    
-    user_id = Column(Integer, ForeignKey("users.id"), nullable=False)
-    title = Column(String, nullable=False)
+
+    id = Column(Integer, primary_key=True, index=True)
+    title = Column(String, index=True)
     author = Column(String)
-    file_path = Column(String, nullable=False)
-    file_name = Column(String, nullable=False)
-    file_size = Column(Integer)
-    total_pages = Column(Integer)
-    current_page = Column(Integer, default=1)
-    progress = Column(Float, default=0.0)
+    book_metadata = Column(JSON, nullable=True) 
+    owner_id = Column(Integer, ForeignKey("users.id"))
+
+    owner = relationship("User", back_populates="books")
