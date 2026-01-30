@@ -8,3 +8,13 @@
 2026-01-30 17:11:20 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/register - password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72]) - 21.09ms
 2026-01-30 17:11:21 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/register - password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72]) - 10.64ms
 2026-01-30 17:11:21 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/register - password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72]) - 10.64ms
+2026-01-30 17:14:06 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/register - 3 validation errors:
+  {'type': 'missing', 'loc': ('response', 'is_active'), 'msg': 'Field required', 'input': <app.models.user.User object at 0x75fa713fb2c0>, 'url': 'https://errors.pydantic.dev/2.5/v/missing'}
+  {'type': 'missing', 'loc': ('response', 'created_at'), 'msg': 'Field required', 'input': <app.models.user.User object at 0x75fa713fb2c0>, 'url': 'https://errors.pydantic.dev/2.5/v/missing'}
+  {'type': 'missing', 'loc': ('response', 'updated_at'), 'msg': 'Field required', 'input': <app.models.user.User object at 0x75fa713fb2c0>, 'url': 'https://errors.pydantic.dev/2.5/v/missing'}
+ - 321.63ms
+2026-01-30 17:14:06 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/register - 3 validation errors:
+  {'type': 'missing', 'loc': ('response', 'is_active'), 'msg': 'Field required', 'input': <app.models.user.User object at 0x75fa713fb2c0>, 'url': 'https://errors.pydantic.dev/2.5/v/missing'}
+  {'type': 'missing', 'loc': ('response', 'created_at'), 'msg': 'Field required', 'input': <app.models.user.User object at 0x75fa713fb2c0>, 'url': 'https://errors.pydantic.dev/2.5/v/missing'}
+  {'type': 'missing', 'loc': ('response', 'updated_at'), 'msg': 'Field required', 'input': <app.models.user.User object at 0x75fa713fb2c0>, 'url': 'https://errors.pydantic.dev/2.5/v/missing'}
+ - 321.63ms

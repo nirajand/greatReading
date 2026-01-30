@@ -72,3 +72,68 @@ Traceback (most recent call last):
 AttributeError: module 'bcrypt' has no attribute '__about__'
 2026-01-30 17:11:21 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/register - password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72]) - 10.64ms
 2026-01-30 17:11:21 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/register - password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72]) - 10.64ms
+2026-01-30 17:13:39 - app.core.logging - INFO - Logging system initialized
+2026-01-30 17:13:42 - app.middleware.logging_middleware - INFO - Request started: GET /docs - ID: b8694cf7-af62-4c45-acba-59c9aacf840b
+2026-01-30 17:13:42 - app.middleware.logging_middleware - INFO - Request started: GET /docs - ID: b8694cf7-af62-4c45-acba-59c9aacf840b
+2026-01-30 17:13:42 - app.middleware.logging_middleware - INFO - Request completed: GET /docs - 200 - 0.32ms
+2026-01-30 17:13:42 - app.middleware.logging_middleware - INFO - Request completed: GET /docs - 200 - 0.32ms
+2026-01-30 17:13:42 - app.middleware.logging_middleware - INFO - Request started: GET /openapi.json - ID: 0ef8e271-1b3c-4e86-b13b-29cb15ac4d8f
+2026-01-30 17:13:42 - app.middleware.logging_middleware - INFO - Request started: GET /openapi.json - ID: 0ef8e271-1b3c-4e86-b13b-29cb15ac4d8f
+2026-01-30 17:13:42 - app.middleware.logging_middleware - INFO - Request completed: GET /openapi.json - 200 - 22.70ms
+2026-01-30 17:13:42 - app.middleware.logging_middleware - INFO - Request completed: GET /openapi.json - 200 - 22.70ms
+2026-01-30 17:14:05 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 47da2516-3695-450a-a8c7-57135d29bd1d
+2026-01-30 17:14:05 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 47da2516-3695-450a-a8c7-57135d29bd1d
+2026-01-30 17:14:06 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/register - 3 validation errors:
+  {'type': 'missing', 'loc': ('response', 'is_active'), 'msg': 'Field required', 'input': <app.models.user.User object at 0x75fa713fb2c0>, 'url': 'https://errors.pydantic.dev/2.5/v/missing'}
+  {'type': 'missing', 'loc': ('response', 'created_at'), 'msg': 'Field required', 'input': <app.models.user.User object at 0x75fa713fb2c0>, 'url': 'https://errors.pydantic.dev/2.5/v/missing'}
+  {'type': 'missing', 'loc': ('response', 'updated_at'), 'msg': 'Field required', 'input': <app.models.user.User object at 0x75fa713fb2c0>, 'url': 'https://errors.pydantic.dev/2.5/v/missing'}
+ - 321.63ms
+2026-01-30 17:14:06 - app.middleware.logging_middleware - ERROR - Request error: POST /api/auth/register - 3 validation errors:
+  {'type': 'missing', 'loc': ('response', 'is_active'), 'msg': 'Field required', 'input': <app.models.user.User object at 0x75fa713fb2c0>, 'url': 'https://errors.pydantic.dev/2.5/v/missing'}
+  {'type': 'missing', 'loc': ('response', 'created_at'), 'msg': 'Field required', 'input': <app.models.user.User object at 0x75fa713fb2c0>, 'url': 'https://errors.pydantic.dev/2.5/v/missing'}
+  {'type': 'missing', 'loc': ('response', 'updated_at'), 'msg': 'Field required', 'input': <app.models.user.User object at 0x75fa713fb2c0>, 'url': 'https://errors.pydantic.dev/2.5/v/missing'}
+ - 321.63ms
+2026-01-30 17:14:07 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 54d91801-047a-480d-a839-043daead4ad0
+2026-01-30 17:14:07 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 54d91801-047a-480d-a839-043daead4ad0
+2026-01-30 17:14:07 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 2.23ms
+2026-01-30 17:14:07 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 2.23ms
+2026-01-30 17:14:19 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: eef94b5b-6685-4951-9adf-a1c9a7360032
+2026-01-30 17:14:19 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: eef94b5b-6685-4951-9adf-a1c9a7360032
+2026-01-30 17:14:19 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 2.42ms
+2026-01-30 17:14:19 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 2.42ms
+2026-01-30 17:14:19 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: c9341af3-cc57-4e6b-8aa5-38f1fe7fd446
+2026-01-30 17:14:19 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: c9341af3-cc57-4e6b-8aa5-38f1fe7fd446
+2026-01-30 17:14:19 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 2.08ms
+2026-01-30 17:14:19 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 2.08ms
+2026-01-30 17:15:01 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 89f4ba97-0237-40f2-bf0d-8fc46d5522fb
+2026-01-30 17:15:01 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/register - ID: 89f4ba97-0237-40f2-bf0d-8fc46d5522fb
+2026-01-30 17:15:01 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 2.33ms
+2026-01-30 17:15:01 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/register - 400 - 2.33ms
+2026-01-30 17:16:01 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: bb4c95a4-7e17-4837-81fa-54c6e8b18b82
+2026-01-30 17:16:01 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: bb4c95a4-7e17-4837-81fa-54c6e8b18b82
+2026-01-30 17:16:02 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/login - 200 - 267.93ms
+2026-01-30 17:16:02 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/login - 200 - 267.93ms
+2026-01-30 17:16:04 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: 553123b4-b356-4c02-9775-9bb0e3fecf0d
+2026-01-30 17:16:04 - app.middleware.logging_middleware - INFO - Request started: POST /api/auth/login - ID: 553123b4-b356-4c02-9775-9bb0e3fecf0d
+2026-01-30 17:16:04 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/login - 200 - 259.05ms
+2026-01-30 17:16:04 - app.middleware.logging_middleware - INFO - Request completed: POST /api/auth/login - 200 - 259.05ms
+2026-01-30 17:16:25 - app.middleware.logging_middleware - INFO - Request started: GET /api/auth/me - ID: 8193237c-1933-49c1-a1cf-23beb75dbdae
+2026-01-30 17:16:25 - app.middleware.logging_middleware - INFO - Request started: GET /api/auth/me - ID: 8193237c-1933-49c1-a1cf-23beb75dbdae
+2026-01-30 17:16:25 - app.middleware.logging_middleware - INFO - Request completed: GET /api/auth/me - 401 - 0.83ms
+2026-01-30 17:16:25 - app.middleware.logging_middleware - INFO - Request completed: GET /api/auth/me - 401 - 0.83ms
+2026-01-30 17:17:01 - app.middleware.logging_middleware - INFO - Request started: POST /api/books/login - ID: 92b1ecec-5a9a-442a-a18f-2868e3f1f57b
+2026-01-30 17:17:01 - app.middleware.logging_middleware - INFO - Request started: POST /api/books/login - ID: 92b1ecec-5a9a-442a-a18f-2868e3f1f57b
+2026-01-30 17:17:01 - app.middleware.logging_middleware - INFO - Request completed: POST /api/books/login - 200 - 261.16ms
+2026-01-30 17:17:01 - app.middleware.logging_middleware - INFO - Request completed: POST /api/books/login - 200 - 261.16ms
+2026-01-30 17:17:06 - app.middleware.logging_middleware - INFO - Request started: POST /api/books/login - ID: 9aec9f5a-8e4f-42c1-b1e8-7a2cc14445b6
+2026-01-30 17:17:06 - app.middleware.logging_middleware - INFO - Request started: POST /api/books/login - ID: 9aec9f5a-8e4f-42c1-b1e8-7a2cc14445b6
+2026-01-30 17:17:06 - app.middleware.logging_middleware - INFO - Request completed: POST /api/books/login - 200 - 263.93ms
+2026-01-30 17:17:06 - app.middleware.logging_middleware - INFO - Request completed: POST /api/books/login - 200 - 263.93ms
+2026-01-30 17:18:44 - app.middleware.logging_middleware - INFO - Request started: GET /docs - ID: e872811b-bf6b-4e97-aa80-b518bd5c33b1
+2026-01-30 17:18:44 - app.middleware.logging_middleware - INFO - Request started: GET /docs - ID: e872811b-bf6b-4e97-aa80-b518bd5c33b1
+2026-01-30 17:18:44 - app.middleware.logging_middleware - INFO - Request completed: GET /docs - 200 - 0.55ms
+2026-01-30 17:18:44 - app.middleware.logging_middleware - INFO - Request completed: GET /docs - 200 - 0.55ms
+2026-01-30 17:18:44 - app.middleware.logging_middleware - INFO - Request started: GET /openapi.json - ID: 5ce16ed1-90ac-4b2c-a134-6f5a99c8b953
+2026-01-30 17:18:44 - app.middleware.logging_middleware - INFO - Request started: GET /openapi.json - ID: 5ce16ed1-90ac-4b2c-a134-6f5a99c8b953
+2026-01-30 17:18:44 - app.middleware.logging_middleware - INFO - Request completed: GET /openapi.json - 200 - 0.58ms
+2026-01-30 17:18:44 - app.middleware.logging_middleware - INFO - Request completed: GET /openapi.json - 200 - 0.58ms
